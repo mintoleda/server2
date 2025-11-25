@@ -1,0 +1,316 @@
+(N) 2025-11-22T06:19:53 - qBittorrent v5.1.4 started. Process ID: 151
+(N) 2025-11-22T06:19:53 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T06:19:53 - Trying to listen on the following list of IP addresses: "0.0.0.0:21389,[::]:21389"
+(I) 2025-11-22T06:19:53 - Peer ID: "-qB5140-"
+(I) 2025-11-22T06:19:53 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T06:19:53 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T06:19:53 - Local Peer Discovery support: ON
+(I) 2025-11-22T06:19:53 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T06:19:53 - Anonymous mode: OFF
+(I) 2025-11-22T06:19:53 - Encryption support: ON
+(I) 2025-11-22T06:19:53 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/21389"
+(I) 2025-11-22T06:19:53 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/21389"
+(I) 2025-11-22T06:19:53 - Successfully listening on IP. IP: "172.18.0.4". Port: "TCP/21389"
+(I) 2025-11-22T06:19:53 - Successfully listening on IP. IP: "172.18.0.4". Port: "UDP/21389"
+(I) 2025-11-22T06:19:53 - Successfully listening on IP. IP: "::1". Port: "TCP/21389"
+(I) 2025-11-22T06:19:53 - Successfully listening on IP. IP: "::1". Port: "UDP/21389"
+(I) 2025-11-22T06:19:53 - UPnP/NAT-PMP support: ON
+(W) 2025-11-22T06:19:53 - Couldn't load IP geolocation database. Reason: No such file or directory
+(N) 2025-11-22T06:19:53 - Using built-in WebUI.
+(N) 2025-11-22T06:19:53 - WebUI translation for selected locale (en_US) has been successfully loaded.
+(N) 2025-11-22T06:19:53 - WebUI: Now listening on IP: *, port: 8080
+(I) 2025-11-22T06:19:54 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(I) 2025-11-22T06:19:54 - Successfully updated IP geolocation database.
+(I) 2025-11-22T06:19:55 - Detected external IP. IP: "128.62.150.144"
+(N) 2025-11-22T06:21:11 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2025-11-22T06:21:46 - WebUI translation for selected locale (en) has been successfully loaded.
+(W) 2025-11-22T06:22:29 - UPnP/NAT-PMP port mapping failed. Message: "could not map port using UPnP: no router found"
+(W) 2025-11-22T06:22:29 - UPnP/NAT-PMP port mapping failed. Message: "could not map port using UPnP: no router found"
+(I) 2025-11-22T06:25:48 - UPnP/NAT-PMP support: OFF
+(N) 2025-11-22T07:14:31 - qBittorrent termination initiated
+(N) 2025-11-22T07:14:31 - Saving resume data completed.
+(N) 2025-11-22T07:14:31 - BitTorrent session successfully finished.
+(N) 2025-11-22T07:14:31 - qBittorrent is now ready to exit
+(N) 2025-11-22T07:14:33 - qBittorrent v5.1.4 started. Process ID: 145
+(N) 2025-11-22T07:14:33 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T07:14:33 - Trying to listen on the following list of IP addresses: "0.0.0.0:21389,[::]:21389"
+(I) 2025-11-22T07:14:33 - Peer ID: "-qB5140-"
+(I) 2025-11-22T07:14:33 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T07:14:33 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T07:14:33 - Local Peer Discovery support: ON
+(I) 2025-11-22T07:14:33 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T07:14:33 - Anonymous mode: OFF
+(I) 2025-11-22T07:14:33 - Encryption support: ON
+(I) 2025-11-22T07:14:33 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/21389"
+(I) 2025-11-22T07:14:33 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/21389"
+(I) 2025-11-22T07:14:33 - Successfully listening on IP. IP: "172.18.0.4". Port: "TCP/21389"
+(I) 2025-11-22T07:14:33 - Successfully listening on IP. IP: "172.18.0.4". Port: "UDP/21389"
+(I) 2025-11-22T07:14:33 - Successfully listening on IP. IP: "::1". Port: "TCP/21389"
+(I) 2025-11-22T07:14:33 - Successfully listening on IP. IP: "::1". Port: "UDP/21389"
+(I) 2025-11-22T07:14:33 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(N) 2025-11-22T07:14:33 - Using built-in WebUI.
+(N) 2025-11-22T07:14:33 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-22T07:14:33 - WebUI: Now listening on IP: *, port: 8080
+(I) 2025-11-22T07:14:33 - Detected external IP. IP: "128.62.150.144"
+(N) 2025-11-22T07:15:12 - qBittorrent termination initiated
+(N) 2025-11-22T07:15:12 - Saving resume data completed.
+(N) 2025-11-22T07:15:12 - BitTorrent session successfully finished.
+(N) 2025-11-22T07:15:12 - qBittorrent is now ready to exit
+(N) 2025-11-22T07:18:28 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2025-11-22T07:18:28 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T07:18:28 - Trying to listen on the following list of IP addresses: "0.0.0.0:21389,[::]:21389"
+(I) 2025-11-22T07:18:28 - Peer ID: "-qB5140-"
+(I) 2025-11-22T07:18:28 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T07:18:28 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T07:18:28 - Local Peer Discovery support: ON
+(I) 2025-11-22T07:18:28 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T07:18:28 - Anonymous mode: OFF
+(I) 2025-11-22T07:18:28 - Encryption support: ON
+(I) 2025-11-22T07:18:28 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/21389"
+(I) 2025-11-22T07:18:28 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/21389"
+(I) 2025-11-22T07:18:28 - Successfully listening on IP. IP: "172.18.0.6". Port: "TCP/21389"
+(I) 2025-11-22T07:18:28 - Successfully listening on IP. IP: "172.18.0.6". Port: "UDP/21389"
+(I) 2025-11-22T07:18:28 - Successfully listening on IP. IP: "::1". Port: "TCP/21389"
+(I) 2025-11-22T07:18:28 - Successfully listening on IP. IP: "::1". Port: "UDP/21389"
+(I) 2025-11-22T07:18:28 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(N) 2025-11-22T07:18:28 - Using built-in WebUI.
+(N) 2025-11-22T07:18:28 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-22T07:18:28 - WebUI: Now listening on IP: *, port: 8080
+(I) 2025-11-22T07:18:28 - Detected external IP. IP: "128.62.150.144"
+(N) 2025-11-22T07:18:48 - qBittorrent termination initiated
+(N) 2025-11-22T07:18:48 - Saving resume data completed.
+(N) 2025-11-22T07:18:48 - BitTorrent session successfully finished.
+(N) 2025-11-22T07:18:48 - qBittorrent is now ready to exit
+(N) 2025-11-22T07:18:57 - qBittorrent v5.1.4 started. Process ID: 145
+(N) 2025-11-22T07:18:57 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T07:18:57 - Trying to listen on the following list of IP addresses: "0.0.0.0:21389,[::]:21389"
+(I) 2025-11-22T07:18:57 - Peer ID: "-qB5140-"
+(I) 2025-11-22T07:18:57 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T07:18:57 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T07:18:57 - Local Peer Discovery support: ON
+(I) 2025-11-22T07:18:57 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T07:18:57 - Anonymous mode: OFF
+(I) 2025-11-22T07:18:57 - Encryption support: ON
+(I) 2025-11-22T07:18:57 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(N) 2025-11-22T07:18:57 - Using built-in WebUI.
+(N) 2025-11-22T07:18:57 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-22T07:18:57 - WebUI: Now listening on IP: *, port: 8080
+(I) 2025-11-22T07:18:57 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/21389"
+(I) 2025-11-22T07:18:57 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/21389"
+(I) 2025-11-22T07:18:57 - Successfully listening on IP. IP: "172.18.0.5". Port: "TCP/21389"
+(I) 2025-11-22T07:18:57 - Successfully listening on IP. IP: "172.18.0.5". Port: "UDP/21389"
+(I) 2025-11-22T07:18:57 - Successfully listening on IP. IP: "::1". Port: "TCP/21389"
+(I) 2025-11-22T07:18:57 - Successfully listening on IP. IP: "::1". Port: "UDP/21389"
+(I) 2025-11-22T07:18:57 - Detected external IP. IP: "128.62.150.144"
+(N) 2025-11-22T07:21:39 - qBittorrent termination initiated
+(N) 2025-11-22T07:21:39 - Saving resume data completed.
+(N) 2025-11-22T07:21:40 - BitTorrent session successfully finished.
+(N) 2025-11-22T07:21:40 - qBittorrent is now ready to exit
+(N) 2025-11-22T07:21:47 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2025-11-22T07:21:47 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T07:21:47 - Trying to listen on the following list of IP addresses: "0.0.0.0:21389,[::]:21389"
+(I) 2025-11-22T07:21:47 - Peer ID: "-qB5140-"
+(I) 2025-11-22T07:21:47 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T07:21:47 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T07:21:47 - Local Peer Discovery support: ON
+(I) 2025-11-22T07:21:47 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T07:21:47 - Anonymous mode: OFF
+(I) 2025-11-22T07:21:47 - Encryption support: ON
+(I) 2025-11-22T07:21:47 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/21389"
+(I) 2025-11-22T07:21:47 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/21389"
+(I) 2025-11-22T07:21:47 - Successfully listening on IP. IP: "::1". Port: "TCP/21389"
+(I) 2025-11-22T07:21:47 - Successfully listening on IP. IP: "::1". Port: "UDP/21389"
+(I) 2025-11-22T07:21:47 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(N) 2025-11-22T07:21:47 - Using built-in WebUI.
+(N) 2025-11-22T07:21:47 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-22T07:21:47 - WebUI: Now listening on IP: *, port: 8080
+(N) 2025-11-22T07:24:34 - qBittorrent termination initiated
+(N) 2025-11-22T07:24:34 - Saving resume data completed.
+(N) 2025-11-22T07:24:34 - BitTorrent session successfully finished.
+(N) 2025-11-22T07:24:34 - qBittorrent is now ready to exit
+(N) 2025-11-22T07:24:41 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2025-11-22T07:24:41 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T07:24:41 - Trying to listen on the following list of IP addresses: "0.0.0.0:21389,[::]:21389"
+(I) 2025-11-22T07:24:41 - Peer ID: "-qB5140-"
+(I) 2025-11-22T07:24:41 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T07:24:41 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T07:24:41 - Local Peer Discovery support: ON
+(I) 2025-11-22T07:24:41 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T07:24:41 - Anonymous mode: OFF
+(I) 2025-11-22T07:24:41 - Encryption support: ON
+(I) 2025-11-22T07:24:41 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/21389"
+(I) 2025-11-22T07:24:41 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/21389"
+(I) 2025-11-22T07:24:41 - Successfully listening on IP. IP: "::1". Port: "TCP/21389"
+(I) 2025-11-22T07:24:41 - Successfully listening on IP. IP: "::1". Port: "UDP/21389"
+(I) 2025-11-22T07:24:41 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(N) 2025-11-22T07:24:41 - Using built-in WebUI.
+(N) 2025-11-22T07:24:41 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-22T07:24:41 - WebUI: Now listening on IP: *, port: 8080
+(N) 2025-11-22T07:26:46 - qBittorrent termination initiated
+(N) 2025-11-22T07:26:46 - Saving resume data completed.
+(N) 2025-11-22T07:26:46 - BitTorrent session successfully finished.
+(N) 2025-11-22T07:26:46 - qBittorrent is now ready to exit
+(N) 2025-11-22T07:26:53 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2025-11-22T07:26:53 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T07:26:53 - Trying to listen on the following list of IP addresses: "0.0.0.0:21389,[::]:21389"
+(I) 2025-11-22T07:26:53 - Peer ID: "-qB5140-"
+(I) 2025-11-22T07:26:53 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T07:26:53 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T07:26:53 - Local Peer Discovery support: ON
+(I) 2025-11-22T07:26:53 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T07:26:53 - Anonymous mode: OFF
+(I) 2025-11-22T07:26:53 - Encryption support: ON
+(I) 2025-11-22T07:26:53 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/21389"
+(I) 2025-11-22T07:26:53 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/21389"
+(I) 2025-11-22T07:26:53 - Successfully listening on IP. IP: "::1". Port: "TCP/21389"
+(I) 2025-11-22T07:26:53 - Successfully listening on IP. IP: "::1". Port: "UDP/21389"
+(I) 2025-11-22T07:26:53 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(N) 2025-11-22T07:26:53 - Using built-in WebUI.
+(N) 2025-11-22T07:26:53 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-22T07:26:53 - WebUI: Now listening on IP: *, port: 8080
+(N) 2025-11-22T07:29:28 - qBittorrent termination initiated
+(N) 2025-11-22T07:29:28 - Saving resume data completed.
+(N) 2025-11-22T07:29:28 - BitTorrent session successfully finished.
+(N) 2025-11-22T07:29:28 - qBittorrent is now ready to exit
+(N) 2025-11-22T07:29:35 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2025-11-22T07:29:35 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T07:29:35 - Trying to listen on the following list of IP addresses: "0.0.0.0:21389,[::]:21389"
+(I) 2025-11-22T07:29:35 - Peer ID: "-qB5140-"
+(I) 2025-11-22T07:29:35 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T07:29:35 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T07:29:35 - Local Peer Discovery support: ON
+(I) 2025-11-22T07:29:35 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T07:29:35 - Anonymous mode: OFF
+(I) 2025-11-22T07:29:35 - Encryption support: ON
+(I) 2025-11-22T07:29:35 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/21389"
+(I) 2025-11-22T07:29:35 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/21389"
+(I) 2025-11-22T07:29:35 - Successfully listening on IP. IP: "::1". Port: "TCP/21389"
+(I) 2025-11-22T07:29:35 - Successfully listening on IP. IP: "::1". Port: "UDP/21389"
+(I) 2025-11-22T07:29:35 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(N) 2025-11-22T07:29:35 - Using built-in WebUI.
+(N) 2025-11-22T07:29:35 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-22T07:29:35 - WebUI: Now listening on IP: *, port: 8080
+(N) 2025-11-22T07:32:14 - qBittorrent termination initiated
+(N) 2025-11-22T07:32:14 - Saving resume data completed.
+(N) 2025-11-22T07:32:14 - BitTorrent session successfully finished.
+(N) 2025-11-22T07:32:14 - qBittorrent is now ready to exit
+(N) 2025-11-22T07:32:17 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2025-11-22T07:32:17 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T07:32:17 - Trying to listen on the following list of IP addresses: "0.0.0.0:21389,[::]:21389"
+(I) 2025-11-22T07:32:17 - Peer ID: "-qB5140-"
+(I) 2025-11-22T07:32:17 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T07:32:17 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T07:32:17 - Local Peer Discovery support: ON
+(I) 2025-11-22T07:32:17 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T07:32:17 - Anonymous mode: OFF
+(I) 2025-11-22T07:32:17 - Encryption support: ON
+(I) 2025-11-22T07:32:17 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/21389"
+(I) 2025-11-22T07:32:17 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/21389"
+(I) 2025-11-22T07:32:17 - Successfully listening on IP. IP: "172.18.0.2". Port: "TCP/21389"
+(I) 2025-11-22T07:32:17 - Successfully listening on IP. IP: "172.18.0.2". Port: "UDP/21389"
+(I) 2025-11-22T07:32:17 - Successfully listening on IP. IP: "::1". Port: "TCP/21389"
+(I) 2025-11-22T07:32:17 - Successfully listening on IP. IP: "::1". Port: "UDP/21389"
+(I) 2025-11-22T07:32:17 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(N) 2025-11-22T07:32:17 - Using built-in WebUI.
+(N) 2025-11-22T07:32:17 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-22T07:32:17 - WebUI: Now listening on IP: *, port: 8080
+(I) 2025-11-22T07:32:17 - Successfully listening on IP. IP: "10.67.189.225". Port: "TCP/21389"
+(I) 2025-11-22T07:32:17 - Successfully listening on IP. IP: "10.67.189.225". Port: "UDP/21389"
+(I) 2025-11-22T07:32:17 - Successfully listening on IP. IP: "fe80::b375:f8ec:f218:1a39%tun0". Port: "TCP/21389"
+(I) 2025-11-22T07:32:17 - Successfully listening on IP. IP: "fe80::b375:f8ec:f218:1a39%tun0". Port: "UDP/21389"
+(I) 2025-11-22T07:32:20 - Detected external IP. IP: "45.134.142.224"
+(W) 2025-11-22T07:32:53 - WebAPI login failure. Reason: invalid credentials, attempt count: 1, IP: ::ffff:172.18.0.1, username: mintoleda
+(N) 2025-11-22T07:33:08 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2025-11-22T07:33:33 - qBittorrent termination initiated
+(N) 2025-11-22T07:33:33 - Saving resume data completed.
+(N) 2025-11-22T07:33:33 - BitTorrent session successfully finished.
+(N) 2025-11-22T07:33:33 - qBittorrent is now ready to exit
+(N) 2025-11-22T07:33:35 - qBittorrent v5.1.4 started. Process ID: 145
+(N) 2025-11-22T07:33:35 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T07:33:35 - Trying to listen on the following list of IP addresses: "0.0.0.0:21389,[::]:21389"
+(I) 2025-11-22T07:33:35 - Peer ID: "-qB5140-"
+(I) 2025-11-22T07:33:35 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T07:33:35 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T07:33:35 - Local Peer Discovery support: ON
+(I) 2025-11-22T07:33:35 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T07:33:35 - Anonymous mode: OFF
+(I) 2025-11-22T07:33:35 - Encryption support: ON
+(I) 2025-11-22T07:33:35 - Successfully listening on IP. IP: "127.0.0.1". Port: "TCP/21389"
+(I) 2025-11-22T07:33:35 - Successfully listening on IP. IP: "127.0.0.1". Port: "UDP/21389"
+(I) 2025-11-22T07:33:35 - Successfully listening on IP. IP: "172.18.0.2". Port: "TCP/21389"
+(I) 2025-11-22T07:33:35 - Successfully listening on IP. IP: "172.18.0.2". Port: "UDP/21389"
+(I) 2025-11-22T07:33:35 - Successfully listening on IP. IP: "10.67.189.225". Port: "TCP/21389"
+(I) 2025-11-22T07:33:35 - Successfully listening on IP. IP: "10.67.189.225". Port: "UDP/21389"
+(I) 2025-11-22T07:33:35 - Successfully listening on IP. IP: "::1". Port: "TCP/21389"
+(I) 2025-11-22T07:33:35 - Successfully listening on IP. IP: "::1". Port: "UDP/21389"
+(I) 2025-11-22T07:33:35 - Successfully listening on IP. IP: "fe80::b375:f8ec:f218:1a39%tun0". Port: "TCP/21389"
+(I) 2025-11-22T07:33:35 - Successfully listening on IP. IP: "fe80::b375:f8ec:f218:1a39%tun0". Port: "UDP/21389"
+(I) 2025-11-22T07:33:35 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(N) 2025-11-22T07:33:35 - Using built-in WebUI.
+(N) 2025-11-22T07:33:35 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-22T07:33:35 - WebUI: Now listening on IP: *, port: 8080
+(I) 2025-11-22T07:33:36 - Detected external IP. IP: "45.134.142.224"
+(N) 2025-11-22T07:33:42 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2025-11-22T07:36:20 - Trying to listen on the following list of IP addresses: "tun0:21389"
+(N) 2025-11-22T07:37:05 - Trying to listen on the following list of IP addresses: "10.67.189.225:21389"
+(I) 2025-11-22T07:37:05 - Successfully listening on IP. IP: "10.67.189.225". Port: "TCP/21389"
+(I) 2025-11-22T07:37:05 - Successfully listening on IP. IP: "10.67.189.225". Port: "UDP/21389"
+(N) 2025-11-22T07:42:03 - Added new torrent. Torrent: "IP Checker"
+(N) 2025-11-22T07:43:05 - Torrent removed. Torrent: "IP Checker"
+(N) 2025-11-22T07:43:06 - Torrent content removed. Torrent: "IP Checker"
+(N) 2025-11-22T07:45:38 - Added new torrent. Torrent: "IP Checker"
+(N) 2025-11-22T07:47:52 - Torrent removed. Torrent: "IP Checker"
+(N) 2025-11-22T07:47:53 - Torrent content removed. Torrent: "IP Checker"
+(N) 2025-11-22T08:31:21 - WebAPI login success. IP: ::ffff:172.18.0.6
+(N) 2025-11-22T08:40:23 - WebAPI login success. IP: ::ffff:172.18.0.4
+(N) 2025-11-22T08:54:41 - qBittorrent termination initiated
+(N) 2025-11-22T08:54:41 - Saving resume data completed.
+(N) 2025-11-22T08:54:42 - BitTorrent session successfully finished.
+(N) 2025-11-22T08:54:42 - qBittorrent is now ready to exit
+(N) 2025-11-22T08:54:44 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2025-11-22T08:54:44 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T08:54:44 - Trying to listen on the following list of IP addresses: "10.67.189.225:21389"
+(I) 2025-11-22T08:54:44 - Peer ID: "-qB5140-"
+(I) 2025-11-22T08:54:44 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T08:54:44 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T08:54:44 - Local Peer Discovery support: ON
+(I) 2025-11-22T08:54:44 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T08:54:44 - Anonymous mode: OFF
+(I) 2025-11-22T08:54:44 - Encryption support: ON
+(I) 2025-11-22T08:54:44 - Successfully listening on IP. IP: "10.67.189.225". Port: "TCP/21389"
+(I) 2025-11-22T08:54:44 - Successfully listening on IP. IP: "10.67.189.225". Port: "UDP/21389"
+(I) 2025-11-22T08:54:44 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(N) 2025-11-22T08:54:44 - Using built-in WebUI.
+(N) 2025-11-22T08:54:44 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-22T08:54:44 - WebUI: Now listening on IP: *, port: 8080
+(I) 2025-11-22T08:54:44 - Detected external IP. IP: "45.134.142.224"
+(N) 2025-11-22T08:56:00 - WebAPI login success. IP: ::ffff:172.18.0.4
+(N) 2025-11-22T09:00:36 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2025-11-22T09:08:26 - Added new torrent. Torrent: "Dune.2021.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT"
+(N) 2025-11-22T09:10:09 - Added new torrent. Torrent: "The.Batman.2022.1080p.BluRay.REMUX.AVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT"
+(N) 2025-11-22T09:12:49 - Torrent stopped. Torrent: "The.Batman.2022.1080p.BluRay.REMUX.AVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT"
+(N) 2025-11-22T09:12:57 - Torrent removed. Torrent: "The.Batman.2022.1080p.BluRay.REMUX.AVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT"
+(N) 2025-11-22T09:14:27 - qBittorrent termination initiated
+(N) 2025-11-22T09:14:27 - Saving resume data completed.
+(N) 2025-11-22T09:19:14 - qBittorrent v5.1.4 started. Process ID: 146
+(N) 2025-11-22T09:19:14 - Using config directory: /app/qBittorrent/config
+(N) 2025-11-22T09:19:14 - Trying to listen on the following list of IP addresses: "10.67.189.225:21389"
+(I) 2025-11-22T09:19:14 - Peer ID: "-qB5140-"
+(I) 2025-11-22T09:19:14 - HTTP User-Agent: "qBittorrent/5.1.4"
+(I) 2025-11-22T09:19:14 - Distributed Hash Table (DHT) support: ON
+(I) 2025-11-22T09:19:14 - Local Peer Discovery support: ON
+(I) 2025-11-22T09:19:14 - Peer Exchange (PeX) support: ON
+(I) 2025-11-22T09:19:14 - Anonymous mode: OFF
+(I) 2025-11-22T09:19:14 - Encryption support: ON
+(I) 2025-11-22T09:19:14 - Successfully listening on IP. IP: "10.67.189.225". Port: "TCP/21389"
+(I) 2025-11-22T09:19:14 - Successfully listening on IP. IP: "10.67.189.225". Port: "UDP/21389"
+(N) 2025-11-22T09:19:14 - Restored torrent. Torrent: "Dune.2021.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.TrueHD.7.1.Atmos-FGT"
+(I) 2025-11-22T09:19:14 - IP geolocation database loaded. Type: DBIP-Country-Lite. Build time: Sat Nov 1 02:28:18 2025.
+(N) 2025-11-22T09:19:14 - Using built-in WebUI.
+(N) 2025-11-22T09:19:14 - WebUI translation for selected locale (en) has been successfully loaded.
+(N) 2025-11-22T09:19:14 - WebUI: Now listening on IP: *, port: 8080
+(I) 2025-11-22T09:19:15 - Detected external IP. IP: "23.234.83.179"
+(N) 2025-11-22T09:19:18 - WebAPI login success. IP: ::ffff:172.18.0.1
+(N) 2025-11-22T09:19:42 - WebAPI login success. IP: ::ffff:172.18.0.3
+(N) 2025-11-22T09:26:49 - qBittorrent termination initiated
+(N) 2025-11-22T09:26:49 - Saving resume data completed.

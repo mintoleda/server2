@@ -1,0 +1,315 @@
+2025-11-22 02:35:24,921:DEBUG:certbot._internal.main:certbot version: 5.1.0
+2025-11-22 02:35:24,921:DEBUG:certbot._internal.main:Location of certbot entry point: /opt/certbot/bin/certbot
+2025-11-22 02:35:24,921:DEBUG:certbot._internal.main:Arguments: ['--config', '/etc/letsencrypt.ini', '--work-dir', '/tmp/letsencrypt-lib', '--logs-dir', '/data/logs', '--cert-name', 'npm-3', '--agree-tos', '--authenticator', 'webroot', '-m', 'fascinatingflo@gmail.com', '--preferred-challenges', 'http', '--domains', 'homarr.mintoleda.github.io']
+2025-11-22 02:35:24,921:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2025-11-22 02:35:25,104:DEBUG:certbot._internal.log:Root logging level set at 30
+2025-11-22 02:35:25,111:DEBUG:certbot._internal.plugins.selection:Requested authenticator webroot and installer None
+2025-11-22 02:35:25,112:DEBUG:certbot._internal.plugins.selection:Single candidate plugin: * webroot
+Description: Saves the necessary validation files to a .well-known/acme-challenge/ directory within the nominated webroot path. A separate HTTP server must be running and serving files from the webroot path. HTTP challenge only (wildcards not supported).
+Interfaces: Authenticator, Plugin
+Entry point: EntryPoint(name='webroot', value='certbot._internal.plugins.webroot:Authenticator', group='certbot.plugins')
+Initialized: <certbot._internal.plugins.webroot.Authenticator object at 0x7c8659fab710>
+Prep: True
+2025-11-22 02:35:25,112:DEBUG:certbot._internal.plugins.selection:Selected authenticator <certbot._internal.plugins.webroot.Authenticator object at 0x7c8659fab710> and installer None
+2025-11-22 02:35:25,113:INFO:certbot._internal.plugins.selection:Plugins selected: Authenticator webroot, Installer None
+2025-11-22 02:35:25,162:DEBUG:certbot._internal.main:Picked account: <Account(RegistrationResource(body=Registration(key=None, contact=(), agreement=None, status=None, terms_of_service_agreed=None, only_return_existing=None, external_account_binding=None), uri='https://acme-v02.api.letsencrypt.org/acme/acct/2818536006', new_authzr_uri=None, terms_of_service=None), 0a0329edb46c0112b049e85f72f8071f, Meta(creation_dt=datetime.datetime(2025, 11, 22, 2, 34, 56, tzinfo=datetime.timezone.utc), creation_host='c54068eb1193', register_to_eff=None))>
+2025-11-22 02:35:25,163:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/directory.
+2025-11-22 02:35:25,165:DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): acme-v02.api.letsencrypt.org:443
+2025-11-22 02:35:25,298:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /directory HTTP/1.1" 200 1063
+2025-11-22 02:35:25,299:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Date: Sat, 22 Nov 2025 02:35:26 GMT
+Content-Type: application/json
+Content-Length: 1063
+Connection: keep-alive
+Cache-Control: public, max-age=0, no-cache
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+{
+  "keyChange": "https://acme-v02.api.letsencrypt.org/acme/key-change",
+  "meta": {
+    "caaIdentities": [
+      "letsencrypt.org"
+    ],
+    "profiles": {
+      "classic": "https://letsencrypt.org/docs/profiles#classic",
+      "shortlived": "https://letsencrypt.org/docs/profiles#shortlived (not yet generally available)",
+      "tlsclient": "https://letsencrypt.org/docs/profiles#tlsclient",
+      "tlsserver": "https://letsencrypt.org/docs/profiles#tlsserver"
+    },
+    "termsOfService": "https://letsencrypt.org/documents/LE-SA-v1.6-August-18-2025.pdf",
+    "website": "https://letsencrypt.org"
+  },
+  "newAccount": "https://acme-v02.api.letsencrypt.org/acme/new-acct",
+  "newNonce": "https://acme-v02.api.letsencrypt.org/acme/new-nonce",
+  "newOrder": "https://acme-v02.api.letsencrypt.org/acme/new-order",
+  "renewalInfo": "https://acme-v02.api.letsencrypt.org/acme/renewal-info",
+  "revokeCert": "https://acme-v02.api.letsencrypt.org/acme/revoke-cert",
+  "ziAUSIV55D4": "https://community.letsencrypt.org/t/adding-random-entries-to-the-directory/33417"
+}
+2025-11-22 02:35:25,304:DEBUG:certbot._internal.display.obj:Notifying user: Requesting a certificate for homarr.mintoleda.github.io
+2025-11-22 02:35:25,306:DEBUG:acme.client:Requesting fresh nonce
+2025-11-22 02:35:25,306:DEBUG:acme.client:Sending HEAD request to https://acme-v02.api.letsencrypt.org/acme/new-nonce.
+2025-11-22 02:35:25,349:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "HEAD /acme/new-nonce HTTP/1.1" 200 0
+2025-11-22 02:35:25,350:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Date: Sat, 22 Nov 2025 02:35:26 GMT
+Connection: keep-alive
+Cache-Control: public, max-age=0, no-cache
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Replay-Nonce: So3nmrngMdi4in6Vh8EGnGFGWYENjHe6C1kI7j5VU3FXux8BXHk
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+
+2025-11-22 02:35:25,350:DEBUG:acme.client:Storing nonce: So3nmrngMdi4in6Vh8EGnGFGWYENjHe6C1kI7j5VU3FXux8BXHk
+2025-11-22 02:35:25,351:DEBUG:acme.client:JWS payload:
+b'{\n  "identifiers": [\n    {\n      "type": "dns",\n      "value": "homarr.mintoleda.github.io"\n    }\n  ]\n}'
+2025-11-22 02:35:25,353:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/new-order:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAia2lkIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2FjY3QvMjgxODUzNjAwNiIsICJub25jZSI6ICJTbzNubXJuZ01kaTRpbjZWaDhFR25HRkdXWUVOakhlNkMxa0k3ajVWVTNGWHV4OEJYSGsiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL25ldy1vcmRlciJ9",
+  "signature": "S52Ts70iur0MPOu-NF_l3dMmy-C-vdd4-2nAYnw6HziUvasEe8MLbsEcjNl2qNe9jUvRxjBACNDXy02HhdvQHxDhPwHGyeV70PWs4lDcK_iGmqH4_-Re667Ry7MLum_pgkorPpEV_9SZ5T12abrwrRWmUPHkrdNpj3G1XGk5Z9DN0-7ALRyN693Vijn5aV0j4EOtBl0C3BUK2Y6pqVXEykk1WDfwA9jm4S1XD6UFpLQsi7gqw92kwxt7Sc60fNHpWTaH9m2wFrQusUavvt3bflprk8vdSxsojHndRlfQtuDZ52BMh7c8g406oD0d4RzPAJNp57DbDuIZJaUe9NBp_Q",
+  "payload": "ewogICJpZGVudGlmaWVycyI6IFsKICAgIHsKICAgICAgInR5cGUiOiAiZG5zIiwKICAgICAgInZhbHVlIjogImhvbWFyci5taW50b2xlZGEuZ2l0aHViLmlvIgogICAgfQogIF0KfQ"
+}
+2025-11-22 02:35:25,434:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/new-order HTTP/1.1" 201 360
+2025-11-22 02:35:25,435:DEBUG:acme.client:Received response:
+HTTP 201
+Server: nginx
+Date: Sat, 22 Nov 2025 02:35:26 GMT
+Content-Type: application/json
+Content-Length: 360
+Connection: keep-alive
+Boulder-Requester: 2818536006
+Cache-Control: public, max-age=0, no-cache
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Location: https://acme-v02.api.letsencrypt.org/acme/order/2818536006/451223937046
+Replay-Nonce: So3nmrng1Kh5V9sAMOdlhVYpEnOCLP4Vgc9PdCuDK5aqD7KmOaA
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+{
+  "status": "pending",
+  "expires": "2025-11-29T02:35:26Z",
+  "identifiers": [
+    {
+      "type": "dns",
+      "value": "homarr.mintoleda.github.io"
+    }
+  ],
+  "authorizations": [
+    "https://acme-v02.api.letsencrypt.org/acme/authz/2818536006/616546500686"
+  ],
+  "finalize": "https://acme-v02.api.letsencrypt.org/acme/finalize/2818536006/451223937046"
+}
+2025-11-22 02:35:25,435:DEBUG:acme.client:Storing nonce: So3nmrng1Kh5V9sAMOdlhVYpEnOCLP4Vgc9PdCuDK5aqD7KmOaA
+2025-11-22 02:35:25,436:DEBUG:acme.client:JWS payload:
+b''
+2025-11-22 02:35:25,437:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/authz/2818536006/616546500686:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAia2lkIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2FjY3QvMjgxODUzNjAwNiIsICJub25jZSI6ICJTbzNubXJuZzFLaDVWOXNBTU9kbGhWWXBFbk9DTFA0VmdjOVBkQ3VESzVhcUQ3S21PYUEiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2F1dGh6LzI4MTg1MzYwMDYvNjE2NTQ2NTAwNjg2In0",
+  "signature": "gVphWNuQC282ZtjXyg75lXc3uYlbdH6z5oEpIaDN4KYUE-H6q8fyExIgRyWS6z4J0J1VQAAxQvIcX9szwUsbzVsyKmKPs2HhLPX4iqpObWv8oIdLg_B471OO0Hiq-UonoxUAQExtMRTrufiP7SID3ssDZEXWR1scGgoFMeK71qRaz0XzSL_CnJ31E_pdp6fTbTarWVjBKySdZWyxfaMdE3q4-DO7jyoXPLkmq8aavh6eqniUyBXfVKwu4VViWso6csvnh70dk1cTNfNht9S7y8uiss_LmzD3BT3BxyvnM24eq2cuqSQLMEO4YyjbKDK_x4JvSr142E0MRtKi25Cd5g",
+  "payload": ""
+}
+2025-11-22 02:35:25,484:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/authz/2818536006/616546500686 HTTP/1.1" 200 834
+2025-11-22 02:35:25,485:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Date: Sat, 22 Nov 2025 02:35:26 GMT
+Content-Type: application/json
+Content-Length: 834
+Connection: keep-alive
+Boulder-Requester: 2818536006
+Cache-Control: public, max-age=0, no-cache
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Replay-Nonce: -l2dNf_XyBrvm6eVOtmDiI7KBL2jLwI7wOspBTP6J08bJ3lIpbU
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "homarr.mintoleda.github.io"
+  },
+  "status": "pending",
+  "expires": "2025-11-29T02:35:26Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall/2818536006/616546500686/FoS3Og",
+      "status": "pending",
+      "token": "d0ePnIIIZDnUbrtJR2d115J6mE1ct376P--36irDf-o"
+    },
+    {
+      "type": "tls-alpn-01",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall/2818536006/616546500686/6EexCA",
+      "status": "pending",
+      "token": "d0ePnIIIZDnUbrtJR2d115J6mE1ct376P--36irDf-o"
+    },
+    {
+      "type": "dns-01",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall/2818536006/616546500686/A8WaMw",
+      "status": "pending",
+      "token": "d0ePnIIIZDnUbrtJR2d115J6mE1ct376P--36irDf-o"
+    }
+  ]
+}
+2025-11-22 02:35:25,485:DEBUG:acme.client:Storing nonce: -l2dNf_XyBrvm6eVOtmDiI7KBL2jLwI7wOspBTP6J08bJ3lIpbU
+2025-11-22 02:35:25,486:DEBUG:acme.challenges:tls-alpn-01 was not recognized, full message: {'type': 'tls-alpn-01', 'url': 'https://acme-v02.api.letsencrypt.org/acme/chall/2818536006/616546500686/6EexCA', 'status': 'pending', 'token': 'd0ePnIIIZDnUbrtJR2d115J6mE1ct376P--36irDf-o'}
+2025-11-22 02:35:25,487:INFO:certbot._internal.auth_handler:Performing the following challenges:
+2025-11-22 02:35:25,487:INFO:certbot._internal.auth_handler:http-01 challenge for homarr.mintoleda.github.io
+2025-11-22 02:35:25,488:INFO:certbot._internal.plugins.webroot:Using the webroot path /data/letsencrypt-acme-challenge for all unmatched domains.
+2025-11-22 02:35:25,488:DEBUG:certbot._internal.plugins.webroot:Creating root challenges validation dir at /data/letsencrypt-acme-challenge/.well-known/acme-challenge
+2025-11-22 02:35:25,502:DEBUG:certbot._internal.plugins.webroot:Attempting to save validation to /data/letsencrypt-acme-challenge/.well-known/acme-challenge/d0ePnIIIZDnUbrtJR2d115J6mE1ct376P--36irDf-o
+2025-11-22 02:35:25,505:DEBUG:acme.client:JWS payload:
+b'{}'
+2025-11-22 02:35:25,507:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/chall/2818536006/616546500686/FoS3Og:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAia2lkIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2FjY3QvMjgxODUzNjAwNiIsICJub25jZSI6ICItbDJkTmZfWHlCcnZtNmVWT3RtRGlJN0tCTDJqTHdJN3dPc3BCVFA2SjA4YkozbElwYlUiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2NoYWxsLzI4MTg1MzYwMDYvNjE2NTQ2NTAwNjg2L0ZvUzNPZyJ9",
+  "signature": "gl-QqbeG6NSjRQfksFOY6bWkc8rbce37lgOAyHIgAFgn6eVVTRmchiLG1-z5MR9eHl717yit7Scqq6bRolIyUEiyVCOygPRpns5Hd61ZlGzkTRE78Z-mgXhOrJs0nomcTYArY_Txb9Ey0JF06KrGGat4h2_q7wrQnht-c4Bg8NN7hsWlPXjE35HP8kup2pUJjPBqhw7quafWpbBUvD3wUTTHSYoLnfhVPyyM3LrOCwE16udzpdOtz4a9QDTl9IW47IYNWDxV3F50ZsvpS-3yxxpC_B96kKtk3512WvbmyrV1xIgawaxDXdNcvavtWlL3v_p3jqQT74tOkkqISZ04vw",
+  "payload": "e30"
+}
+2025-11-22 02:35:25,554:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/chall/2818536006/616546500686/FoS3Og HTTP/1.1" 200 195
+2025-11-22 02:35:25,555:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Date: Sat, 22 Nov 2025 02:35:26 GMT
+Content-Type: application/json
+Content-Length: 195
+Connection: keep-alive
+Boulder-Requester: 2818536006
+Cache-Control: public, max-age=0, no-cache
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index", <https://acme-v02.api.letsencrypt.org/acme/authz/2818536006/616546500686>;rel="up"
+Location: https://acme-v02.api.letsencrypt.org/acme/chall/2818536006/616546500686/FoS3Og
+Replay-Nonce: So3nmrng2BaRTUZPoyVShlm7_YxkDydYuFbmFBrcZ2kO1vGmFaA
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+{
+  "type": "http-01",
+  "url": "https://acme-v02.api.letsencrypt.org/acme/chall/2818536006/616546500686/FoS3Og",
+  "status": "pending",
+  "token": "d0ePnIIIZDnUbrtJR2d115J6mE1ct376P--36irDf-o"
+}
+2025-11-22 02:35:25,556:DEBUG:acme.client:Storing nonce: So3nmrng2BaRTUZPoyVShlm7_YxkDydYuFbmFBrcZ2kO1vGmFaA
+2025-11-22 02:35:25,556:INFO:certbot._internal.auth_handler:Waiting for verification...
+2025-11-22 02:35:26,557:DEBUG:acme.client:JWS payload:
+b''
+2025-11-22 02:35:26,559:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/authz/2818536006/616546500686:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAia2lkIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2FjY3QvMjgxODUzNjAwNiIsICJub25jZSI6ICJTbzNubXJuZzJCYVJUVVpQb3lWU2hsbTdfWXhrRHlkWXVGYm1GQnJjWjJrTzF2R21GYUEiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2F1dGh6LzI4MTg1MzYwMDYvNjE2NTQ2NTAwNjg2In0",
+  "signature": "auRM5N-S9_rqJKIu9FrhWeqJILFmRcVcl3J1aA_tReKnnx2Z5QC8Kt4XyUjD8B3PI4tA6rzwNiTs29BuxaqIwIo2Y8hH8eJSaH5YlsaMpySlvbtSvAEHJ4pVJUpHDkyb1_3laRyjppPrUf22sM5VFQLnCi30lsYbp1BzWEP8PuTuuLirtMcsSDwlRVXIRCfEYBeQvU0oIPimNE4SsL2woSXnS-RzLPOWWkoIIn6Vj77fqw5i8xTEq0s2b_cio3eFm81mMqeediNc2aQiQ4mv5jyNLpEMbX2pc1IFOMmrIp7ambt8RN3RkP6lB-5dq1_EdTNU7ACR1oHEmszlTPaI8A",
+  "payload": ""
+}
+2025-11-22 02:35:26,604:DEBUG:urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/authz/2818536006/616546500686 HTTP/1.1" 200 1327
+2025-11-22 02:35:26,605:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Date: Sat, 22 Nov 2025 02:35:27 GMT
+Content-Type: application/json
+Content-Length: 1327
+Connection: keep-alive
+Boulder-Requester: 2818536006
+Cache-Control: public, max-age=0, no-cache
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Replay-Nonce: -l2dNf_XWSKCxpN_0PlczXRzQkB39mv8xgEwZNCEchWtvZZxrFQ
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "homarr.mintoleda.github.io"
+  },
+  "status": "invalid",
+  "expires": "2025-11-29T02:35:26Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall/2818536006/616546500686/FoS3Og",
+      "status": "invalid",
+      "validated": "2025-11-22T02:35:26Z",
+      "error": {
+        "type": "urn:ietf:params:acme:error:unauthorized",
+        "detail": "2606:50c0:8003::153: Invalid response from http://homarr.mintoleda.github.io/.well-known/acme-challenge/d0ePnIIIZDnUbrtJR2d115J6mE1ct376P--36irDf-o: 404",
+        "status": 403
+      },
+      "token": "d0ePnIIIZDnUbrtJR2d115J6mE1ct376P--36irDf-o",
+      "validationRecord": [
+        {
+          "url": "http://homarr.mintoleda.github.io/.well-known/acme-challenge/d0ePnIIIZDnUbrtJR2d115J6mE1ct376P--36irDf-o",
+          "hostname": "homarr.mintoleda.github.io",
+          "port": "80",
+          "addressesResolved": [
+            "185.199.110.153",
+            "185.199.111.153",
+            "185.199.109.153",
+            "185.199.108.153",
+            "2606:50c0:8003::153",
+            "2606:50c0:8000::153",
+            "2606:50c0:8001::153",
+            "2606:50c0:8002::153"
+          ],
+          "addressUsed": "2606:50c0:8003::153"
+        }
+      ]
+    }
+  ]
+}
+2025-11-22 02:35:26,606:DEBUG:acme.client:Storing nonce: -l2dNf_XWSKCxpN_0PlczXRzQkB39mv8xgEwZNCEchWtvZZxrFQ
+2025-11-22 02:35:26,607:INFO:certbot._internal.auth_handler:Challenge failed for domain homarr.mintoleda.github.io
+2025-11-22 02:35:26,607:INFO:certbot._internal.auth_handler:http-01 challenge for homarr.mintoleda.github.io
+2025-11-22 02:35:26,608:DEBUG:certbot._internal.display.obj:Notifying user: 
+Certbot failed to authenticate some domains (authenticator: webroot). The Certificate Authority reported these problems:
+  Domain: homarr.mintoleda.github.io
+  Type:   unauthorized
+  Detail: 2606:50c0:8003::153: Invalid response from http://homarr.mintoleda.github.io/.well-known/acme-challenge/d0ePnIIIZDnUbrtJR2d115J6mE1ct376P--36irDf-o: 404
+
+Hint: The Certificate Authority failed to download the temporary challenge files created by Certbot. Ensure that the listed domains serve their content from the provided --webroot-path/-w and that files created there can be downloaded from the internet.
+
+2025-11-22 02:35:26,609:DEBUG:certbot._internal.error_handler:Encountered exception:
+Traceback (most recent call last):
+  File "/opt/certbot/lib/python3.11/site-packages/certbot/_internal/auth_handler.py", line 104, in handle_authorizations
+    self._poll_authorizations(authzrs, max_retries, max_time_mins, best_effort)
+  File "/opt/certbot/lib/python3.11/site-packages/certbot/_internal/auth_handler.py", line 208, in _poll_authorizations
+    raise errors.AuthorizationError('Some challenges have failed.')
+certbot.errors.AuthorizationError: Some challenges have failed.
+
+2025-11-22 02:35:26,610:DEBUG:certbot._internal.error_handler:Calling registered functions
+2025-11-22 02:35:26,611:INFO:certbot._internal.auth_handler:Cleaning up challenges
+2025-11-22 02:35:26,611:DEBUG:certbot._internal.plugins.webroot:Removing /data/letsencrypt-acme-challenge/.well-known/acme-challenge/d0ePnIIIZDnUbrtJR2d115J6mE1ct376P--36irDf-o
+2025-11-22 02:35:26,617:DEBUG:certbot._internal.plugins.webroot:All challenges cleaned up
+2025-11-22 02:35:26,620:DEBUG:certbot._internal.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/opt/certbot/bin/certbot", line 7, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/opt/certbot/lib/python3.11/site-packages/certbot/main.py", line 18, in main
+    return internal_main.main(cli_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.11/site-packages/certbot/_internal/main.py", line 1850, in main
+    return config.func(config, plugins)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.11/site-packages/certbot/_internal/main.py", line 1562, in certonly
+    lineage = _get_and_save_cert(le_client, config, domains, certname, lineage)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.11/site-packages/certbot/_internal/main.py", line 141, in _get_and_save_cert
+    lineage = le_client.obtain_and_enroll_certificate(domains, certname)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.11/site-packages/certbot/_internal/client.py", line 526, in obtain_and_enroll_certificate
+    cert, chain, key, _ = self.obtain_certificate(domains)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.11/site-packages/certbot/_internal/client.py", line 427, in obtain_certificate
+    orderr = self._get_order_and_authorizations(csr.data, self.config.allow_subset_of_names)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.11/site-packages/certbot/_internal/client.py", line 505, in _get_order_and_authorizations
+    authzr = self.auth_handler.handle_authorizations(orderr, self.config, best_effort)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/certbot/lib/python3.11/site-packages/certbot/_internal/auth_handler.py", line 104, in handle_authorizations
+    self._poll_authorizations(authzrs, max_retries, max_time_mins, best_effort)
+  File "/opt/certbot/lib/python3.11/site-packages/certbot/_internal/auth_handler.py", line 208, in _poll_authorizations
+    raise errors.AuthorizationError('Some challenges have failed.')
+certbot.errors.AuthorizationError: Some challenges have failed.
+2025-11-22 02:35:26,630:ERROR:certbot._internal.log:Some challenges have failed.

@@ -1,0 +1,95 @@
+services:
+  gluetun:
+    image: qmcgaw/gluetun
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    environment:
+      - VPN_SERVICE_PROVIDER=mullvad
+      - VPN_TYPE=wireguard
+      - WIREGUARD_PRIVATE_KEY=${WIREGUARD_PRIVATE_KEY}
+      - WIREGUARD_ADDRESSES=${WIREGUARD_ADDRESSES}
+      - FIREWALL_INPUT_PORTS=8080
+    ports:
+      - 8080:8080
+
+  homarr:
+    container_name: homarr
+    image: ghcr.io/homarr-labs/homarr:latest
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
+      - ./homarr/appdata:/appdata
+    environment:
+      - SECRET_ENCRYPTION_KEY=${SECRET_ENCRYPTION_KEY}
+    ports:
+      - "7575:7575"
+
+  radarr:
+    container_name: radarr
+    image: ghcr.io/hotio/radarr
+    ports:
+      - "7878:7878"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=002
+      - TZ=Etc/UTC
+    volumes:
+      - ./radarr/config:/config
+      - /d/serverData:/data
+
+  qbittorrent:
+    container_name: qbittorrent
+    image: ghcr.io/hotio/qbittorrent
+    network_mode: "service:gluetun"
+    # ports:
+    #   - "8080:8080"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=002
+      - TZ=Etc/UTC
+      - WEBUI_PORTS=8080
+      - LIBTORRENT=v1
+    volumes:
+      - ./qbittorrent/config:/config
+      - /d/serverData/torrents:/data/torrents
+      - /d/serverData/torrents/movies:/data/torrents/movies
+      - /d/serverData/torrents/tv:/data/torrents/tv
+
+  prowlarr:
+    container_name: prowlarr
+    image: ghcr.io/hotio/prowlarr
+    ports:
+      - "9696:9696"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=002
+      - TZ=Etc/UTC
+    volumes:
+      - ./prowlarr/config:/config
+
+  # flaresolverr:
+  #   image: ghcr.io/thephaseless/byparr:latest
+  #   restart: unless-stopped
+  #   init: true
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   # Uncomment below to use byparr outside of internal network
+  #   ports:
+  #     - "8191:8191"
+
+  privoxy:
+    image: vimagick/privoxy
+    ports:
+      - "8118:8118"
+    volumes:
+      - ./privoxy/useraction:/etc/privoxy/useraction
+      - ./privoxy/userfilter:/etc/privoxy/userfilter
+    cap_add:
+      - NET_ADMIN
+    restart: always
