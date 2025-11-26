@@ -72,18 +72,7 @@ services:
     volumes:
       - ./prowlarr/config:/config
 
-  # flaresolverr:
-  #   image: ghcr.io/thephaseless/byparr:latest
-  #   restart: unless-stopped
-  #   init: true
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile
-  #   # Uncomment below to use byparr outside of internal network
-  #   ports:
-  #     - "8191:8191"
-
-  privoxy:
+    privoxy:
     image: vimagick/privoxy
     ports:
       - "8118:8118"
