@@ -20,7 +20,7 @@ services:
     restart: unless-stopped
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock # Optional, only if you want docker integration
-      - ./config/homarr:/appdata
+      - ./homarr/appdata:/appdata
     environment:
       - SECRET_ENCRYPTION_KEY=${SECRET_ENCRYPTION_KEY}
     ports:
@@ -37,7 +37,7 @@ services:
       - UMASK=002
       - TZ=Etc/UTC
     volumes:
-      - ./config/radarr:/config
+      - ./radarr/config:/config
       - /d/serverData:/data
 
   qbittorrent:
@@ -54,7 +54,7 @@ services:
       - WEBUI_PORTS=8080
       - LIBTORRENT=v1
     volumes:
-      - ./config/qbittorrent:/config
+      - ./qbittorrent/config:/config
       - /d/serverData/torrents:/data/torrents
       - /d/serverData/torrents/movies:/data/torrents/movies
       - /d/serverData/torrents/tv:/data/torrents/tv
@@ -70,7 +70,7 @@ services:
       - UMASK=002
       - TZ=Etc/UTC
     volumes:
-      - ./config/prowlarr:/config
+      - ./prowlarr/config:/config
 
   # flaresolverr:
   #   image: ghcr.io/thephaseless/byparr:latest
@@ -88,8 +88,8 @@ services:
     ports:
       - "8118:8118"
     volumes:
-      - ./config/privoxy/useraction:/etc/privoxy/useraction
-      - ./config/privoxy/userfilter:/etc/privoxy/userfilter
+      - ./privoxy/useraction:/etc/privoxy/useraction
+      - ./privoxy/userfilter:/etc/privoxy/userfilter
     cap_add:
       - NET_ADMIN
     restart: always
