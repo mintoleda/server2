@@ -40,6 +40,20 @@ services:
       - ./radarr/config:/config
       - /d/serverData:/data
 
+  sonarr:
+    container_name: sonarr
+    image: ghcr.io/hotio/sonarr
+    ports:
+      - "8989:8989"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=002
+      - TZ=Etc/UTC
+    volumes:
+      - ./sonarr/config:/config
+      - /d/serverData:/data
+
   qbittorrent:
     container_name: qbittorrent
     image: ghcr.io/hotio/qbittorrent
@@ -71,8 +85,36 @@ services:
       - TZ=Etc/UTC
     volumes:
       - ./prowlarr/config:/config
+    
+  jellyfin:
+    container_name: jellyfin
+    image: ghcr.io/hotio/jellyfin
+    ports:
+      - "8096:8096"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=002
+      - TZ=Etc/UTC
+      - DOTNET_EnableDiagnostics=0
+    volumes:
+      - ./jellyfin/config:/config
+      - /d/serverData/media:/data
 
-    privoxy:
+  jellyseerr:
+    container_name: jellyseerr
+    image: ghcr.io/hotio/jellyseerr
+    ports:
+      - "5055:5055"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=002
+      - TZ=Etc/UTC
+    volumes:
+      - ./jellyseerr/config:/config
+
+  privoxy:
     image: vimagick/privoxy
     ports:
       - "8118:8118"
@@ -82,3 +124,27 @@ services:
     cap_add:
       - NET_ADMIN
     restart: always
+
+  dash:
+    image: mauricenino/dashdot:latest
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - '80:3001'
+    volumes:
+      - /:/mnt/host:ro
+    environment:
+      # Server Config
+      - DASHDOT_SHOW_DASH_VERSION=none
+      - DASHDOT_OS_LABEL_LIST=up_since
+      - DASHDOT_SHOW_HOST=true
+      # CPU
+      - DASHDOT_CPU_LABEL_List=brand,model,cores,threads
+      - DASHDOT_ENABLE_CPU_TEMPS=true
+      # Storage
+      - DASHDOT_FS_DEVICE_FILTER=sda,sdb,sdc,sdd
+      # RAM
+      - DASHDOT_RAM_LABEL_LIST=size
+      # Extra
+      - DASHDOT_WIDGET_LIST=os,cpu,storage,ram
+      - DASHDOT_ALWAYS_SHOW_PERCENTAGES=true

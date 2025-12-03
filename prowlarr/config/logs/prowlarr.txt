@@ -2841,3 +2841,628 @@
 2025-11-22 09:19:15.4|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
 2025-11-22 09:26:49.9|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
 2025-11-22 09:26:50.0|Info|ConsoleApp|Exiting main.
+2025-12-03 21:13:53.1|Info|Bootstrap|Starting Prowlarr - /app/bin/Prowlarr - Version 2.3.0.5236
+2025-12-03 21:13:53.2|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 21:13:53.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 21:13:53.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 21:13:53.9|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-03 21:13:54.0|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-03 21:13:54.0|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-03 21:13:54.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-03 21:13:54.1|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-03 21:13:54.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0883561s
+2025-12-03 21:13:54.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-03 21:13:54.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1008896s
+2025-12-03 21:13:54.1|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-03 21:13:54.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-03 21:13:54.2|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-03 21:13:54.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-03 21:13:54.2|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-03 21:13:54.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0628044s
+2025-12-03 21:13:54.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-03 21:13:54.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0739542s
+2025-12-03 21:13:54.5|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-12-03 21:13:54.7|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-12-03 21:13:54.9|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-12-03 21:14:01.2|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-12-03 21:14:01.2|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-12-03 21:14:01.2|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
+2025-12-03 21:14:24.8|Info|HistoryService|Removing items older than 30 days from history
+2025-12-03 21:14:24.8|Info|BackupService|Starting Backup
+2025-12-03 21:14:24.9|Info|HousekeepingService|Running housecleaning tasks
+2025-12-03 21:14:25.3|Info|Database|Vacuuming Log database
+2025-12-03 21:14:25.4|Info|Database|Log database compressed
+2025-12-03 21:14:25.4|Info|Database|Vacuuming Main database
+2025-12-03 21:14:25.5|Info|Database|Main database compressed
+2025-12-03 21:14:25.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 21:14:25.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-03 21:14:25.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 21:14:25.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-03 21:14:26.4|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-03 21:14:26.4|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-03 21:14:27.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 21:14:28.1|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-03 21:14:28.1|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-03 21:14:28.1|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-03 21:14:28.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 100, Limit: 100, Categories: [2000, 2020]
+2025-12-03 21:24:40.6|Warn|Sonarr|Unable to complete application test
+
+[v2.3.0.5236] System.Net.Http.HttpRequestException: Connection refused (radarr:8989)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 355
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 341
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.GetIndexerSchema(SonarrSettings settings) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 79
+   at NzbDrone.Core.Applications.Sonarr.Sonarr.<>c__DisplayClass11_0.<BuildSonarrIndexer>b__0() in ./NzbDrone.Core/Applications/Sonarr/Sonarr.cs:line 239
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Applications.Sonarr.Sonarr.BuildSonarrIndexer(IndexerDefinition indexer, IndexerCapabilities indexerCapabilities, DownloadProtocol protocol, Int32 id) in ./NzbDrone.Core/Applications/Sonarr/Sonarr.cs:line 239
+   at NzbDrone.Core.Applications.Sonarr.Sonarr.Test() in ./NzbDrone.Core/Applications/Sonarr/Sonarr.cs:line 52
+
+
+2025-12-03 21:24:40.6|Warn|ProwlarrErrorPipeline|Invalid request Validation failed: 
+ -- BaseUrl: Unable to complete application test, cannot connect to Sonarr. Connection refused (radarr:8989)
+2025-12-03 21:24:56.9|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:25:08.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 21:25:45.5|Warn|Cardigann|Request for LimeTorrents failed with status 520. Retrying in 2.7154737s.
+2025-12-03 21:25:45.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-03 21:25:45.9|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-03 21:25:45.9|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 21:25:46.3|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-03 21:25:46.3|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-03 21:25:46.3|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-03 21:25:46.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:25:48.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:25:50.5|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://sonarr:8989/api/v3/indexer: 409.Conflict (5433 bytes)
+{
+  "message": "constraint failed\nUNIQUE constraint failed: Indexers.Name",
+  "description": "code = Constraint (19), message = System.Data.SQLite.SQLiteException (0x800027AF): constraint failed\nUNIQUE constraint failed: Indexers.Name\n   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLiteDataReader.NextResult()\n   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)\n   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1075\n   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition\u0026 command) in /_/Dapper/SqlMapper.cs:line 1033\n   at Dapper.SqlMapper.QueryMultiple(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable\u00601 commandTimeout, Nullable\u00601 commandType) in /_/Dapper/SqlMapper.cs:line 1009\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 189\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 146\n   at NzbDrone.Core.ThingiProvider.ProviderFactory\u00602.Create(TProviderDefinition definition) in ./Sonarr.Core/ThingiProvider/ProviderFactory.cs:line 116\n   at Sonarr.Api.V3.ProviderControllerBase\u00604.CreateProvider(TProviderResource providerResource, Boolean forceSave) in ./Sonarr.Api.V3/ProviderControllerBase.cs:line 83\n   at lambda_method336(Closure , Object , Object[] )\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeNextResourceFilter\u003Eg__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.\u003CInvoke\u003Eg__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\n   at Sonarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/BufferingMiddleware.cs:line 28\n   at Sonarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/IfModifiedMiddleware.cs:line 41\n   at Sonarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/CacheHeaderMiddleware.cs:line 33\n   at Sonarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/StartingUpMiddleware.cs:line 38\n   at Sonarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/UrlBaseMiddleware.cs:line 29\n   at Sonarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/VersionMiddleware.cs:line 29\n   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)\n   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.\u003CInvoke\u003Eg__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)"
+}
+2025-12-03 21:25:50.5|Error|SonarrV3Proxy|Unexpected response status code: Conflict
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [409:Conflict] [POST] at [http://sonarr:8989/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+{
+  "message": "constraint failed\nUNIQUE constraint failed: Indexers.Name",
+  "description": "code = Constraint (19), message = System.Data.SQLite.SQLiteException (0x800027AF): constraint failed\nUNIQUE constraint failed: Indexers.Name\n   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLiteDataReader.NextResult()\n   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)\n   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1075\n   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition\u0026 command) in /_/Dapper/SqlMapper.cs:line 1033\n   at Dapper.SqlMapper.QueryMultiple(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable\u00601 commandTimeout, Nullable\u00601 commandType) in /_/Dapper/SqlMapper.cs:line 1009\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 189\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 146\n   at NzbDrone.Core.ThingiProvider.ProviderFactory\u00602.Create(TProviderDefinition definition) in ./Sonarr.Core/ThingiProvider/ProviderFactory.cs:line 116\n   at Sonarr.Api.V3.ProviderControllerBase\u00604.CreateProvider(TProviderResource providerResource, Boolean forceSave) in ./Sonarr.Api.V3/ProviderControllerBase.cs:line 83\n   at lambda_method336(Closure , Object , Object[] )\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeNextResourceFilter\u003Eg__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.\u003CInvoke\u003Eg__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\n   at Sonarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/BufferingMiddleware.cs:line 28\n   at Sonarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/IfModifiedMiddleware.cs:line 41\n   at Sonarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/CacheHeaderMiddleware.cs:line 33\n   at Sonarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/StartingUpMiddleware.cs:line 38\n   at Sonarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/UrlBaseMiddleware.cs:line 29\n   at Sonarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/VersionMiddleware.cs:line 29\n   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)\n   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.\u003CInvoke\u003Eg__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)"
+}
+
+
+2025-12-03 21:25:50.6|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [409:Conflict] [POST] at [http://sonarr:8989/api/v3/indexer]
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [409:Conflict] [POST] at [http://sonarr:8989/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.AddIndexer(SonarrIndexer indexer, SonarrSettings settings) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 91
+   at NzbDrone.Core.Applications.Sonarr.Sonarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Sonarr/Sonarr.cs:line 147
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+{
+  "message": "constraint failed\nUNIQUE constraint failed: Indexers.Name",
+  "description": "code = Constraint (19), message = System.Data.SQLite.SQLiteException (0x800027AF): constraint failed\nUNIQUE constraint failed: Indexers.Name\n   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLiteDataReader.NextResult()\n   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)\n   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1075\n   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition\u0026 command) in /_/Dapper/SqlMapper.cs:line 1033\n   at Dapper.SqlMapper.QueryMultiple(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable\u00601 commandTimeout, Nullable\u00601 commandType) in /_/Dapper/SqlMapper.cs:line 1009\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 189\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 146\n   at NzbDrone.Core.ThingiProvider.ProviderFactory\u00602.Create(TProviderDefinition definition) in ./Sonarr.Core/ThingiProvider/ProviderFactory.cs:line 116\n   at Sonarr.Api.V3.ProviderControllerBase\u00604.CreateProvider(TProviderResource providerResource, Boolean forceSave) in ./Sonarr.Api.V3/ProviderControllerBase.cs:line 83\n   at lambda_method336(Closure , Object , Object[] )\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeNextResourceFilter\u003Eg__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.\u003CInvoke\u003Eg__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\n   at Sonarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/BufferingMiddleware.cs:line 28\n   at Sonarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/IfModifiedMiddleware.cs:line 41\n   at Sonarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/CacheHeaderMiddleware.cs:line 33\n   at Sonarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/StartingUpMiddleware.cs:line 38\n   at Sonarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/UrlBaseMiddleware.cs:line 29\n   at Sonarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/VersionMiddleware.cs:line 29\n   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)\n   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.\u003CInvoke\u003Eg__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)"
+}
+
+
+2025-12-03 21:25:50.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:25:52.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 21:25:54.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:25:55.5|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://sonarr:8989/api/v3/indexer: 409.Conflict (5433 bytes)
+{
+  "message": "constraint failed\nUNIQUE constraint failed: Indexers.Name",
+  "description": "code = Constraint (19), message = System.Data.SQLite.SQLiteException (0x800027AF): constraint failed\nUNIQUE constraint failed: Indexers.Name\n   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLiteDataReader.NextResult()\n   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)\n   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1075\n   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition\u0026 command) in /_/Dapper/SqlMapper.cs:line 1033\n   at Dapper.SqlMapper.QueryMultiple(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable\u00601 commandTimeout, Nullable\u00601 commandType) in /_/Dapper/SqlMapper.cs:line 1009\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 189\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 146\n   at NzbDrone.Core.ThingiProvider.ProviderFactory\u00602.Create(TProviderDefinition definition) in ./Sonarr.Core/ThingiProvider/ProviderFactory.cs:line 116\n   at Sonarr.Api.V3.ProviderControllerBase\u00604.CreateProvider(TProviderResource providerResource, Boolean forceSave) in ./Sonarr.Api.V3/ProviderControllerBase.cs:line 83\n   at lambda_method336(Closure , Object , Object[] )\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeNextResourceFilter\u003Eg__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.\u003CInvoke\u003Eg__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\n   at Sonarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/BufferingMiddleware.cs:line 28\n   at Sonarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/IfModifiedMiddleware.cs:line 41\n   at Sonarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/CacheHeaderMiddleware.cs:line 33\n   at Sonarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/StartingUpMiddleware.cs:line 38\n   at Sonarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/UrlBaseMiddleware.cs:line 29\n   at Sonarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/VersionMiddleware.cs:line 29\n   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)\n   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.\u003CInvoke\u003Eg__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)"
+}
+2025-12-03 21:25:55.5|Error|SonarrV3Proxy|Unexpected response status code: Conflict
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [409:Conflict] [POST] at [http://sonarr:8989/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+{
+  "message": "constraint failed\nUNIQUE constraint failed: Indexers.Name",
+  "description": "code = Constraint (19), message = System.Data.SQLite.SQLiteException (0x800027AF): constraint failed\nUNIQUE constraint failed: Indexers.Name\n   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLiteDataReader.NextResult()\n   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)\n   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1075\n   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition\u0026 command) in /_/Dapper/SqlMapper.cs:line 1033\n   at Dapper.SqlMapper.QueryMultiple(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable\u00601 commandTimeout, Nullable\u00601 commandType) in /_/Dapper/SqlMapper.cs:line 1009\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 189\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 146\n   at NzbDrone.Core.ThingiProvider.ProviderFactory\u00602.Create(TProviderDefinition definition) in ./Sonarr.Core/ThingiProvider/ProviderFactory.cs:line 116\n   at Sonarr.Api.V3.ProviderControllerBase\u00604.CreateProvider(TProviderResource providerResource, Boolean forceSave) in ./Sonarr.Api.V3/ProviderControllerBase.cs:line 83\n   at lambda_method336(Closure , Object , Object[] )\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeNextResourceFilter\u003Eg__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.\u003CInvoke\u003Eg__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\n   at Sonarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/BufferingMiddleware.cs:line 28\n   at Sonarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/IfModifiedMiddleware.cs:line 41\n   at Sonarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/CacheHeaderMiddleware.cs:line 33\n   at Sonarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/StartingUpMiddleware.cs:line 38\n   at Sonarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/UrlBaseMiddleware.cs:line 29\n   at Sonarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/VersionMiddleware.cs:line 29\n   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)\n   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.\u003CInvoke\u003Eg__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)"
+}
+
+
+2025-12-03 21:25:55.6|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [409:Conflict] [POST] at [http://sonarr:8989/api/v3/indexer]
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [409:Conflict] [POST] at [http://sonarr:8989/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.AddIndexer(SonarrIndexer indexer, SonarrSettings settings) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 91
+   at NzbDrone.Core.Applications.Sonarr.Sonarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Sonarr/Sonarr.cs:line 147
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+{
+  "message": "constraint failed\nUNIQUE constraint failed: Indexers.Name",
+  "description": "code = Constraint (19), message = System.Data.SQLite.SQLiteException (0x800027AF): constraint failed\nUNIQUE constraint failed: Indexers.Name\n   at System.Data.SQLite.SQLite3.Reset(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLite3.Step(SQLiteStatement stmt)\n   at System.Data.SQLite.SQLiteDataReader.NextResult()\n   at System.Data.SQLite.SQLiteDataReader..ctor(SQLiteCommand cmd, CommandBehavior behave)\n   at System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)\n   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in /_/Dapper/SqlMapper.cs:line 1075\n   at Dapper.SqlMapper.QueryMultipleImpl(IDbConnection cnn, CommandDefinition\u0026 command) in /_/Dapper/SqlMapper.cs:line 1033\n   at Dapper.SqlMapper.QueryMultiple(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable\u00601 commandTimeout, Nullable\u00601 commandType) in /_/Dapper/SqlMapper.cs:line 1009\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(IDbConnection connection, IDbTransaction transaction, TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 189\n   at NzbDrone.Core.Datastore.BasicRepository\u00601.Insert(TModel model) in ./Sonarr.Core/Datastore/BasicRepository.cs:line 146\n   at NzbDrone.Core.ThingiProvider.ProviderFactory\u00602.Create(TProviderDefinition definition) in ./Sonarr.Core/ThingiProvider/ProviderFactory.cs:line 116\n   at Sonarr.Api.V3.ProviderControllerBase\u00604.CreateProvider(TProviderResource providerResource, Boolean forceSave) in ./Sonarr.Api.V3/ProviderControllerBase.cs:line 83\n   at lambda_method336(Closure , Object , Object[] )\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeNextResourceFilter\u003Eg__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State\u0026 next, Scope\u0026 scope, Object\u0026 state, Boolean\u0026 isCompleted)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()\n--- End of stack trace from previous location ---\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.\u003CInvokeAsync\u003Eg__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)\n   at Microsoft.AspNetCore.Routing.EndpointMiddleware.\u003CInvoke\u003Eg__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)\n   at Sonarr.Http.Middleware.BufferingMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/BufferingMiddleware.cs:line 28\n   at Sonarr.Http.Middleware.IfModifiedMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/IfModifiedMiddleware.cs:line 41\n   at Sonarr.Http.Middleware.CacheHeaderMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/CacheHeaderMiddleware.cs:line 33\n   at Sonarr.Http.Middleware.StartingUpMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/StartingUpMiddleware.cs:line 38\n   at Sonarr.Http.Middleware.UrlBaseMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/UrlBaseMiddleware.cs:line 29\n   at Sonarr.Http.Middleware.VersionMiddleware.InvokeAsync(HttpContext context) in ./Sonarr.Http/Middleware/VersionMiddleware.cs:line 29\n   at Microsoft.AspNetCore.ResponseCompression.ResponseCompressionMiddleware.InvokeCore(HttpContext context)\n   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)\n   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)\n   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.\u003CInvoke\u003Eg__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)"
+}
+
+
+2025-12-03 21:25:55.7|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://sonarr:8989/api/v3/indexer: 400.BadRequest (361 bytes)
+[
+  {
+    "propertyName": "Name",
+    "errorMessage": "Should be unique",
+    "attemptedValue": "The Pirate Bay (Prowlarr)",
+    "severity": "error",
+    "errorCode": "PredicateValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "propertyName": "Name",
+      "propertyValue": "The Pirate Bay (Prowlarr)"
+    }
+  }
+]
+2025-12-03 21:25:55.7|Error|SonarrV3Proxy|Invalid Request
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+[
+  {
+    "propertyName": "Name",
+    "errorMessage": "Should be unique",
+    "attemptedValue": "The Pirate Bay (Prowlarr)",
+    "severity": "error",
+    "errorCode": "PredicateValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "propertyName": "Name",
+      "propertyValue": "The Pirate Bay (Prowlarr)"
+    }
+  }
+]
+
+
+2025-12-03 21:25:55.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://sonarr:8989/api/v3/indexer?forceSave=true: 400.BadRequest (361 bytes)
+[
+  {
+    "propertyName": "Name",
+    "errorMessage": "Should be unique",
+    "attemptedValue": "The Pirate Bay (Prowlarr)",
+    "severity": "error",
+    "errorCode": "PredicateValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "propertyName": "Name",
+      "propertyValue": "The Pirate Bay (Prowlarr)"
+    }
+  }
+]
+2025-12-03 21:25:55.8|Error|SonarrV3Proxy|Invalid Request
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+[
+  {
+    "propertyName": "Name",
+    "errorMessage": "Should be unique",
+    "attemptedValue": "The Pirate Bay (Prowlarr)",
+    "severity": "error",
+    "errorCode": "PredicateValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "propertyName": "Name",
+      "propertyValue": "The Pirate Bay (Prowlarr)"
+    }
+  }
+]
+
+
+2025-12-03 21:25:55.8|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.AddIndexer(SonarrIndexer indexer, SonarrSettings settings) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 99
+   at NzbDrone.Core.Applications.Sonarr.Sonarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Sonarr/Sonarr.cs:line 147
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "propertyName": "Name",
+    "errorMessage": "Should be unique",
+    "attemptedValue": "The Pirate Bay (Prowlarr)",
+    "severity": "error",
+    "errorCode": "PredicateValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "propertyName": "Name",
+      "propertyValue": "The Pirate Bay (Prowlarr)"
+    }
+  }
+]
+
+
+2025-12-03 21:25:55.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://sonarr:8989/api/v3/indexer: 400.BadRequest (367 bytes)
+[
+  {
+    "propertyName": "Name",
+    "errorMessage": "Should be unique",
+    "attemptedValue": "Torrent Downloads (Prowlarr)",
+    "severity": "error",
+    "errorCode": "PredicateValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "propertyName": "Name",
+      "propertyValue": "Torrent Downloads (Prowlarr)"
+    }
+  }
+]
+2025-12-03 21:25:55.9|Error|SonarrV3Proxy|Invalid Request
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+[
+  {
+    "propertyName": "Name",
+    "errorMessage": "Should be unique",
+    "attemptedValue": "Torrent Downloads (Prowlarr)",
+    "severity": "error",
+    "errorCode": "PredicateValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "propertyName": "Name",
+      "propertyValue": "Torrent Downloads (Prowlarr)"
+    }
+  }
+]
+
+
+2025-12-03 21:25:56.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://sonarr:8989/api/v3/indexer?forceSave=true: 400.BadRequest (367 bytes)
+[
+  {
+    "propertyName": "Name",
+    "errorMessage": "Should be unique",
+    "attemptedValue": "Torrent Downloads (Prowlarr)",
+    "severity": "error",
+    "errorCode": "PredicateValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "propertyName": "Name",
+      "propertyValue": "Torrent Downloads (Prowlarr)"
+    }
+  }
+]
+2025-12-03 21:25:56.1|Error|SonarrV3Proxy|Invalid Request
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+[
+  {
+    "propertyName": "Name",
+    "errorMessage": "Should be unique",
+    "attemptedValue": "Torrent Downloads (Prowlarr)",
+    "severity": "error",
+    "errorCode": "PredicateValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "propertyName": "Name",
+      "propertyValue": "Torrent Downloads (Prowlarr)"
+    }
+  }
+]
+
+
+2025-12-03 21:25:56.1|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.AddIndexer(SonarrIndexer indexer, SonarrSettings settings) in ./NzbDrone.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 99
+   at NzbDrone.Core.Applications.Sonarr.Sonarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Sonarr/Sonarr.cs:line 147
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "propertyName": "Name",
+    "errorMessage": "Should be unique",
+    "attemptedValue": "Torrent Downloads (Prowlarr)",
+    "severity": "error",
+    "errorCode": "PredicateValidator",
+    "formattedMessageArguments": [],
+    "formattedMessagePlaceholderValues": {
+      "propertyName": "Name",
+      "propertyValue": "Torrent Downloads (Prowlarr)"
+    }
+  }
+]
+
+
+2025-12-03 21:34:22.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:34:22.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:34:22.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 21:34:22.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:44:55.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-03 21:44:55.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 21:44:55.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-03 21:50:22.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:50:22.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:50:22.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 21:50:22.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:50:24.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-03 21:54:03.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [TRON: Ares 2025], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-03 21:54:03.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [TRON: Ares 2025], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 21:54:03.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [TRON Ares 2025], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-03 21:55:50.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [Flash] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-03 21:55:50.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [The Flash] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-03 21:55:50.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Flash] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 21:55:50.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [The Flash] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-03 21:55:52.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [Flash 2014] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-03 21:55:52.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [The Flash (2014)] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-03 21:55:52.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Flash 2014] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 21:55:52.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [The Flash (2014)] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-03 21:55:54.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Flash] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-03 21:55:54.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [Flash] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-03 21:55:56.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Flash 2014] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-03 21:55:56.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [Flash 2014] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-03 22:06:22.8|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:06:22.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:06:22.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 22:06:22.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:06:24.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:15:26.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-03 22:15:26.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 22:15:26.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-03 22:22:23.0|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:22:23.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:22:23.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 22:22:23.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:22:25.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:37:53.2|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:37:53.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:37:53.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 22:37:53.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:37:55.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:45:56.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-03 22:45:56.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 22:45:56.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-03 22:53:53.4|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:53:53.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:53:53.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 22:53:53.4|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 22:53:55.4|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:09:53.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:09:53.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:09:53.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 23:09:53.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:16:26.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-03 23:16:26.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 23:16:26.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-03 23:25:23.8|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:25:23.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:25:23.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 23:25:23.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:40:54.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:40:54.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 23:40:54.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:40:54.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:46:57.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-03 23:46:57.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 23:46:57.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-03 23:47:05.0|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-12-03 23:47:05.5|Info|ConsoleApp|Exiting main.
+2025-12-03 23:48:13.9|Info|Bootstrap|Starting Prowlarr - /app/bin/Prowlarr - Version 2.3.0.5236
+2025-12-03 23:48:14.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 23:48:14.1|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 23:48:14.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 23:48:14.8|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-03 23:48:14.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-03 23:48:15.0|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-03 23:48:15.0|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-03 23:48:15.1|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-03 23:48:15.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1160894s
+2025-12-03 23:48:15.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-03 23:48:15.1|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1560178s
+2025-12-03 23:48:15.2|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-03 23:48:15.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-03 23:48:15.3|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-03 23:48:15.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-03 23:48:15.4|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-03 23:48:15.4|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0813514s
+2025-12-03 23:48:15.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-03 23:48:15.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1004176s
+2025-12-03 23:48:15.5|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-12-03 23:48:16.0|Error|Microsoft.Extensions.Hosting.Internal.Host|Hosting failed to start
+
+[v2.3.0.5236] System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+
+
+2025-12-03 23:48:16.1|Fatal|ConsoleApp|EPIC FAIL!
+
+[v2.3.0.5236] System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at NzbDrone.Host.Bootstrap.Start(String[] args, Action`1 trayCallback) in ./NzbDrone.Host/Bootstrap.cs:line 80
+   at NzbDrone.Console.ConsoleApp.Main(String[] args) in ./NzbDrone.Console/ConsoleApp.cs:line 43
+
+
