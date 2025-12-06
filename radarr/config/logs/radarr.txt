@@ -5140,3 +5140,410 @@
 2025-12-03 23:48:16.3|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
 2025-12-03 23:48:16.3|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
 2025-12-03 23:48:16.3|Info|ConsoleApp|Exiting main.
+2025-12-03 23:55:59.3|Info|Bootstrap|Starting Radarr - /app/bin/Radarr - Version 6.0.4.10291
+2025-12-03 23:55:59.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 23:55:59.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 23:55:59.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 23:56:00.2|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-03 23:56:00.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-03 23:56:00.3|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-03 23:56:00.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-03 23:56:00.5|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-03 23:56:00.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.105516s
+2025-12-03 23:56:00.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-03 23:56:00.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1238418s
+2025-12-03 23:56:00.6|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-03 23:56:00.6|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-03 23:56:00.7|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-03 23:56:00.7|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-03 23:56:00.7|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-03 23:56:00.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0798474s
+2025-12-03 23:56:00.8|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-03 23:56:00.8|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0935107s
+2025-12-03 23:56:01.3|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:7878
+2025-12-03 23:56:01.8|Info|CommandExecutor|Starting 2 threads for tasks.
+2025-12-03 23:56:02.0|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-12-03 23:56:02.0|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-12-03 23:56:02.0|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
+2025-12-03 23:56:02.0|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-12-03 23:56:02.5|Error|DownloadClientRemovesCompletedDownloadsCheck|Unknown error occurred in DownloadClientHistoryRetentionCheck HealthCheck
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Connection refused (gluetun:8080)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.IsApiSupported(QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 35
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.FetchProxy(QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 81
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.<>c__DisplayClass7_0.<GetProxyCache>b__0() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 76
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxyCache(QBittorrentSettings settings, Boolean force) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 76
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxy(QBittorrentSettings settings, Boolean force) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 59
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.get_Proxy() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 49
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.GetStatus() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 374
+   at NzbDrone.Core.HealthCheck.Checks.DownloadClientRemovesCompletedDownloadsCheck.Check() in ./NzbDrone.Core/HealthCheck/Checks/DownloadClientRemovesCompletedDownloadsCheck.cs:line 42
+
+
+2025-12-03 23:56:02.7|Error|DownloadClientSortingCheck|Unknown error occurred in DownloadClientSortingCheck HealthCheck
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Connection refused (gluetun:8080)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.IsApiSupported(QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 35
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.FetchProxy(QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 81
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.<>c__DisplayClass7_0.<GetProxyCache>b__0() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 76
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxyCache(QBittorrentSettings settings, Boolean force) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 76
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxy(QBittorrentSettings settings, Boolean force) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 59
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.get_Proxy() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 49
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.GetStatus() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 374
+   at NzbDrone.Core.HealthCheck.Checks.DownloadClientSortingCheck.Check() in ./NzbDrone.Core/HealthCheck/Checks/DownloadClientSortingCheck.cs:line 43
+
+
+2025-12-03 23:56:32.0|Info|RssSyncService|Starting RSS Sync
+2025-12-03 23:56:32.7|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/3/2025 11:46:57 PM and 12/3/2025 11:56:32 PM UTC. Search may be required.
+2025-12-03 23:56:35.1|Info|DownloadDecisionMaker|Processing 145 releases
+2025-12-03 23:56:47.9|Info|RssSyncService|RSS Sync Completed. Reports found: 145, Reports grabbed: 0
+2025-12-04 00:29:37.9|Info|RssSyncService|Starting RSS Sync
+2025-12-04 00:29:38.4|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/3/2025 11:56:32 PM and 12/4/2025 12:29:38 AM UTC. Search may be required.
+2025-12-04 00:29:40.4|Info|DownloadDecisionMaker|Processing 145 releases
+2025-12-04 00:29:51.6|Info|RssSyncService|RSS Sync Completed. Reports found: 145, Reports grabbed: 0
+2025-12-04 00:49:57.9|Info|MovieService|Assigning file [Dune (2021) [imdbid-tt1160419] - [Remux-2160p][TrueHD Atmos 7.1][DV HDR10][HEVC]-FGT.mkv] to movie [[Dune (2021)][tt1160419, 438631]]
+2025-12-04 00:59:56.2|Info|RssSyncService|Starting RSS Sync
+2025-12-04 00:59:56.6|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 12:29:38 AM and 12/4/2025 12:59:56 AM UTC. Search may be required.
+2025-12-04 00:59:56.6|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-04 00:59:58.7|Info|DownloadDecisionMaker|Processing 140 releases
+2025-12-04 01:00:05.0|Info|RssSyncService|RSS Sync Completed. Reports found: 140, Reports grabbed: 0
+2025-12-04 01:30:12.8|Info|RssSyncService|Starting RSS Sync
+2025-12-04 01:30:13.2|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-04 01:30:13.2|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 12:59:56 AM and 12/4/2025 1:30:13 AM UTC. Search may be required.
+2025-12-04 01:30:15.3|Info|DownloadDecisionMaker|Processing 140 releases
+2025-12-04 01:30:21.5|Info|RssSyncService|RSS Sync Completed. Reports found: 140, Reports grabbed: 0
+2025-12-04 02:00:23.1|Info|RssSyncService|Starting RSS Sync
+2025-12-04 02:00:23.4|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 1:30:13 AM and 12/4/2025 2:00:23 AM UTC. Search may be required.
+2025-12-04 02:00:23.4|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-04 02:00:25.6|Info|DownloadDecisionMaker|Processing 139 releases
+2025-12-04 02:00:31.6|Info|RssSyncService|RSS Sync Completed. Reports found: 139, Reports grabbed: 0
+2025-12-04 04:02:47.0|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-12-04 04:02:47.1|Info|RssSyncService|Starting RSS Sync
+2025-12-04 04:02:47.5|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 2:00:23 AM and 12/4/2025 4:02:47 AM UTC. Search may be required.
+2025-12-04 04:02:47.5|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-04 04:02:49.8|Info|DownloadDecisionMaker|Processing 131 releases
+2025-12-04 04:02:50.9|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-12-04 04:02:57.3|Info|RssSyncService|RSS Sync Completed. Reports found: 131, Reports grabbed: 0
+2025-12-04 04:33:17.5|Info|RssSyncService|Starting RSS Sync
+2025-12-04 04:33:17.9|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 4:02:47 AM and 12/4/2025 4:33:17 AM UTC. Search may be required.
+2025-12-04 04:33:20.1|Info|DownloadDecisionMaker|Processing 132 releases
+2025-12-04 04:33:25.9|Info|RssSyncService|RSS Sync Completed. Reports found: 132, Reports grabbed: 0
+2025-12-04 05:03:32.9|Info|RssSyncService|Starting RSS Sync
+2025-12-04 05:03:33.2|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 4:33:17 AM and 12/4/2025 5:03:33 AM UTC. Search may be required.
+2025-12-04 05:03:35.3|Info|DownloadDecisionMaker|Processing 138 releases
+2025-12-04 05:03:41.5|Info|RssSyncService|RSS Sync Completed. Reports found: 138, Reports grabbed: 0
+2025-12-04 05:33:52.0|Info|RssSyncService|Starting RSS Sync
+2025-12-04 05:33:52.4|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 5:03:33 AM and 12/4/2025 5:33:52 AM UTC. Search may be required.
+2025-12-04 05:33:54.5|Info|DownloadDecisionMaker|Processing 139 releases
+2025-12-04 05:34:01.8|Info|RssSyncService|RSS Sync Completed. Reports found: 139, Reports grabbed: 0
+2025-12-04 16:41:18.2|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-12-04 16:41:19.2|Info|RssSyncService|Starting RSS Sync
+2025-12-04 16:41:19.7|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-04 16:41:19.9|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-12-04 16:41:21.3|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 5:33:52 AM and 12/4/2025 4:41:19 PM UTC. Search may be required.
+2025-12-04 16:41:21.8|Warn|Torznab|Indexer Nyaa.si (Prowlarr) rss sync didn't cover the period between 12/4/2025 5:28:00 AM and 12/4/2025 6:14:00 AM UTC. Search may be required.
+2025-12-04 16:41:21.8|Info|DownloadDecisionMaker|Processing 258 releases
+2025-12-04 16:41:48.9|Info|RssSyncService|RSS Sync Completed. Reports found: 258, Reports grabbed: 0
+2025-12-04 17:11:52.0|Info|RssSyncService|Starting RSS Sync
+2025-12-04 17:11:52.4|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-04 17:11:54.1|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 4:41:19 PM and 12/4/2025 5:11:52 PM UTC. Search may be required.
+2025-12-04 17:11:54.5|Info|DownloadDecisionMaker|Processing 260 releases
+2025-12-04 17:12:06.3|Info|RssSyncService|RSS Sync Completed. Reports found: 260, Reports grabbed: 0
+2025-12-04 17:42:11.7|Info|RssSyncService|Starting RSS Sync
+2025-12-04 17:42:12.2|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-04 17:42:13.8|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 5:11:52 PM and 12/4/2025 5:42:12 PM UTC. Search may be required.
+2025-12-04 17:42:14.3|Info|DownloadDecisionMaker|Processing 262 releases
+2025-12-04 17:42:26.2|Info|RssSyncService|RSS Sync Completed. Reports found: 262, Reports grabbed: 0
+2025-12-04 18:53:09.5|Info|RssSyncService|Starting RSS Sync
+2025-12-04 18:53:31.4|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/4/api?t=movie&cat=2000&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (145 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 12/4/2025 6:58:31 PM due to recent failures." />
+2025-12-04 18:53:31.4|Warn|Torznab|API Request Limit reached for Torrent Downloads (Prowlarr). Disabled for 00:05:00
+2025-12-04 18:53:31.5|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/3/api?t=movie&cat=2000,2020,2040,2060,2030,2045&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (145 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 12/4/2025 6:58:31 PM due to recent failures." />
+2025-12-04 18:53:31.5|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [GET] http://prowlarr:9696/2/api?t=movie&cat=2000,2020&extended=1&apikey=(removed)&offset=0&limit=100: 429.TooManyRequests (145 bytes)
+<?xml version="1.0" encoding="UTF-8"?>
+<error code="429" description="Indexer is disabled till 12/4/2025 6:58:31 PM due to recent failures." />
+2025-12-04 18:53:31.5|Warn|Torznab|API Request Limit reached for The Pirate Bay (Prowlarr). Disabled for 00:05:00
+2025-12-04 18:53:31.5|Warn|Torznab|API Request Limit reached for Nyaa.si (Prowlarr). Disabled for 00:05:00
+2025-12-04 18:53:31.5|Info|DownloadDecisionMaker|No results found
+2025-12-04 18:53:31.5|Info|RssSyncService|RSS Sync Completed. Reports found: 0, Reports grabbed: 0
+2025-12-04 19:23:39.8|Info|RssSyncService|Starting RSS Sync
+2025-12-04 19:23:41.9|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 5:42:12 PM and 12/4/2025 7:23:40 PM UTC. Search may be required.
+2025-12-04 19:23:42.5|Info|DownloadDecisionMaker|Processing 268 releases
+2025-12-04 19:23:57.4|Info|RssSyncService|RSS Sync Completed. Reports found: 268, Reports grabbed: 0
+2025-12-04 19:53:59.2|Info|RssSyncService|Starting RSS Sync
+2025-12-04 19:54:01.2|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 7:23:40 PM and 12/4/2025 7:53:59 PM UTC. Search may be required.
+2025-12-04 19:54:01.6|Info|DownloadDecisionMaker|Processing 268 releases
+2025-12-04 19:54:14.6|Info|RssSyncService|RSS Sync Completed. Reports found: 268, Reports grabbed: 0
+2025-12-04 20:24:41.1|Info|RssSyncService|Starting RSS Sync
+2025-12-04 20:24:43.1|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 7:53:59 PM and 12/4/2025 8:24:41 PM UTC. Search may be required.
+2025-12-04 20:24:43.6|Info|DownloadDecisionMaker|Processing 267 releases
+2025-12-04 20:24:56.3|Info|RssSyncService|RSS Sync Completed. Reports found: 267, Reports grabbed: 0
+2025-12-04 20:55:24.8|Info|RssSyncService|Starting RSS Sync
+2025-12-04 20:55:26.9|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 8:24:41 PM and 12/4/2025 8:55:25 PM UTC. Search may be required.
+2025-12-04 20:55:27.2|Info|DownloadDecisionMaker|Processing 257 releases
+2025-12-04 20:55:40.1|Info|RssSyncService|RSS Sync Completed. Reports found: 257, Reports grabbed: 0
+2025-12-04 21:14:49.6|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2025-12-04 21:14:49.6|Info|HousekeepingService|Running housecleaning tasks
+2025-12-04 21:14:49.9|Info|DiskScanService|Scanning disk for Dune
+2025-12-04 21:14:50.0|Info|DiskScanService|Completed scanning disk for Dune
+2025-12-04 21:14:50.0|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-12-04 21:14:50.1|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-12-04 21:14:50.1|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-12-04 21:14:50.1|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-12-04 21:14:50.3|Info|RefreshMovieService|Updating info for TRON: Ares
+2025-12-04 21:14:50.4|Info|Database|Vacuuming Log database
+2025-12-04 21:14:50.4|Info|Database|Log database compressed
+2025-12-04 21:14:50.4|Info|Database|Vacuuming Main database
+2025-12-04 21:14:50.6|Info|Database|Main database compressed
+2025-12-04 21:14:50.8|Info|DiskScanService|Scanning disk for TRON: Ares
+2025-12-04 21:14:50.9|Info|DiskScanService|Completed scanning disk for TRON: Ares
+2025-12-04 21:14:51.3|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-12-04 21:14:51.3|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-12-04 21:14:51.8|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-12-04 21:14:51.8|Info|ExistingExtraFileService|Found 8 possible extra files, imported 0 files.
+2025-12-04 21:25:49.7|Info|RssSyncService|Starting RSS Sync
+2025-12-04 21:25:51.8|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 8:55:25 PM and 12/4/2025 9:25:50 PM UTC. Search may be required.
+2025-12-04 21:25:52.1|Info|DownloadDecisionMaker|Processing 257 releases
+2025-12-04 21:26:05.1|Info|RssSyncService|RSS Sync Completed. Reports found: 257, Reports grabbed: 0
+2025-12-04 21:56:08.7|Info|RssSyncService|Starting RSS Sync
+2025-12-04 21:56:10.8|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 9:25:50 PM and 12/4/2025 9:56:09 PM UTC. Search may be required.
+2025-12-04 21:56:11.1|Info|DownloadDecisionMaker|Processing 257 releases
+2025-12-04 21:56:23.9|Info|RssSyncService|RSS Sync Completed. Reports found: 257, Reports grabbed: 0
+2025-12-04 22:26:30.0|Info|RssSyncService|Starting RSS Sync
+2025-12-04 22:26:32.1|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 9:56:09 PM and 12/4/2025 10:26:30 PM UTC. Search may be required.
+2025-12-04 22:26:32.4|Info|DownloadDecisionMaker|Processing 257 releases
+2025-12-04 22:26:44.7|Info|RssSyncService|RSS Sync Completed. Reports found: 257, Reports grabbed: 0
+2025-12-04 22:41:44.5|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-12-04 22:41:46.4|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-12-04 22:57:06.9|Info|RssSyncService|Starting RSS Sync
+2025-12-04 22:57:08.9|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 10:26:30 PM and 12/4/2025 10:57:07 PM UTC. Search may be required.
+2025-12-04 22:57:09.5|Info|DownloadDecisionMaker|Processing 253 releases
+2025-12-04 22:57:22.1|Info|RssSyncService|RSS Sync Completed. Reports found: 253, Reports grabbed: 0
+2025-12-05 03:54:26.2|Info|RssSyncService|Starting RSS Sync
+2025-12-05 03:54:26.6|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/4/2025 10:57:07 PM and 12/5/2025 3:54:26 AM UTC. Search may be required.
+2025-12-05 03:54:26.8|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-05 03:54:30.8|Info|DownloadDecisionMaker|Processing 144 releases
+2025-12-05 03:54:40.3|Info|RssSyncService|RSS Sync Completed. Reports found: 144, Reports grabbed: 0
+2025-12-05 04:24:56.6|Info|RssSyncService|Starting RSS Sync
+2025-12-05 04:24:56.9|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/5/2025 3:54:26 AM and 12/5/2025 4:24:56 AM UTC. Search may be required.
+2025-12-05 04:24:57.0|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-05 04:24:59.2|Info|DownloadDecisionMaker|Processing 143 releases
+2025-12-05 04:25:06.2|Info|RssSyncService|RSS Sync Completed. Reports found: 143, Reports grabbed: 0
+2025-12-05 04:41:51.5|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-12-05 04:41:53.5|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-12-05 04:55:27.1|Info|RssSyncService|Starting RSS Sync
+2025-12-05 04:55:27.3|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/5/2025 4:24:56 AM and 12/5/2025 4:55:27 AM UTC. Search may be required.
+2025-12-05 04:55:27.4|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-05 04:55:29.7|Info|DownloadDecisionMaker|Processing 142 releases
+2025-12-05 04:55:36.4|Info|RssSyncService|RSS Sync Completed. Reports found: 142, Reports grabbed: 0
+2025-12-05 05:26:45.4|Info|RssSyncService|Starting RSS Sync
+2025-12-05 05:26:45.7|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/5/2025 4:55:27 AM and 12/5/2025 5:26:45 AM UTC. Search may be required.
+2025-12-05 05:26:45.8|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-05 05:26:48.0|Info|DownloadDecisionMaker|Processing 139 releases
+2025-12-05 05:26:53.9|Info|RssSyncService|RSS Sync Completed. Reports found: 139, Reports grabbed: 0
+2025-12-05 05:57:15.8|Info|RssSyncService|Starting RSS Sync
+2025-12-05 05:57:16.1|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/5/2025 5:26:45 AM and 12/5/2025 5:57:16 AM UTC. Search may be required.
+2025-12-05 05:57:16.1|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-05 05:57:18.2|Info|DownloadDecisionMaker|Processing 136 releases
+2025-12-05 05:57:24.3|Info|RssSyncService|RSS Sync Completed. Reports found: 136, Reports grabbed: 0
+2025-12-05 06:27:46.2|Info|RssSyncService|Starting RSS Sync
+2025-12-05 06:27:46.5|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/5/2025 5:57:16 AM and 12/5/2025 6:27:46 AM UTC. Search may be required.
+2025-12-05 06:27:46.6|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-05 06:27:48.6|Info|DownloadDecisionMaker|Processing 137 releases
+2025-12-05 06:27:55.0|Info|RssSyncService|RSS Sync Completed. Reports found: 137, Reports grabbed: 0
+2025-12-05 06:57:58.0|Info|RssSyncService|Starting RSS Sync
+2025-12-05 06:57:58.4|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/5/2025 6:27:46 AM and 12/5/2025 6:57:58 AM UTC. Search may be required.
+2025-12-05 06:57:58.4|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-05 06:58:00.6|Info|DownloadDecisionMaker|Processing 139 releases
+2025-12-05 06:58:07.0|Info|RssSyncService|RSS Sync Completed. Reports found: 139, Reports grabbed: 0
+2025-12-05 07:28:28.4|Info|RssSyncService|Starting RSS Sync
+2025-12-05 07:28:28.7|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/5/2025 6:57:58 AM and 12/5/2025 7:28:28 AM UTC. Search may be required.
+2025-12-05 07:28:28.8|Warn|Torznab|Indexer The Pirate Bay (Prowlarr) rss sync didn't cover the period between 12/7/2025 12:00:00 AM and 12/7/2025 12:00:00 AM UTC. Search may be required.
+2025-12-05 07:28:31.0|Info|DownloadDecisionMaker|Processing 142 releases
+2025-12-05 07:28:38.3|Info|RssSyncService|RSS Sync Completed. Reports found: 142, Reports grabbed: 0
+2025-12-05 07:58:47.2|Info|RssSyncService|Starting RSS Sync
+2025-12-05 07:58:47.5|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/5/2025 7:28:28 AM and 12/5/2025 7:58:47 AM UTC. Search may be required.
+2025-12-05 07:58:49.6|Info|DownloadDecisionMaker|Processing 150 releases
+2025-12-05 07:58:57.1|Info|RssSyncService|RSS Sync Completed. Reports found: 150, Reports grabbed: 0
+2025-12-05 08:29:05.9|Info|RssSyncService|Starting RSS Sync
+2025-12-05 08:29:06.2|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/5/2025 7:58:47 AM and 12/5/2025 8:29:06 AM UTC. Search may be required.
+2025-12-05 08:29:08.4|Info|DownloadDecisionMaker|Processing 151 releases
+2025-12-05 08:29:16.3|Info|RssSyncService|RSS Sync Completed. Reports found: 151, Reports grabbed: 0
+2025-12-05 23:54:26.3|Info|Bootstrap|Starting Radarr - /app/bin/Radarr - Version 6.0.4.10291
+2025-12-05 23:54:26.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-05 23:54:26.5|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-05 23:54:27.1|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-05 23:54:27.4|Info|MigrationController|*** Migrating data source=/config/radarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-05 23:54:27.6|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-05 23:54:27.6|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-05 23:54:27.6|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-05 23:54:27.9|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-05 23:54:27.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.320099s
+2025-12-05 23:54:28.0|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-05 23:54:28.0|Info|FluentMigrator.Runner.MigrationRunner|=> 0.3359487s
+2025-12-05 23:54:28.1|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-05 23:54:28.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-05 23:54:28.1|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-05 23:54:28.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-05 23:54:28.2|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-05 23:54:28.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0541039s
+2025-12-05 23:54:28.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-05 23:54:28.2|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0690327s
+2025-12-05 23:54:28.9|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:7878
+2025-12-05 23:54:29.4|Info|CommandExecutor|Starting 2 threads for tasks.
+2025-12-05 23:54:29.6|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-12-05 23:54:29.7|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-12-05 23:54:29.7|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
+2025-12-05 23:54:29.7|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-12-05 23:54:30.2|Error|DownloadClientRemovesCompletedDownloadsCheck|Unknown error occurred in DownloadClientHistoryRetentionCheck HealthCheck
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Connection refused (gluetun:8080)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.IsApiSupported(QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 35
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.FetchProxy(QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 81
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.<>c__DisplayClass7_0.<GetProxyCache>b__0() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 76
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxyCache(QBittorrentSettings settings, Boolean force) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 76
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxy(QBittorrentSettings settings, Boolean force) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 59
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.get_Proxy() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 49
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.GetStatus() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 374
+   at NzbDrone.Core.HealthCheck.Checks.DownloadClientRemovesCompletedDownloadsCheck.Check() in ./NzbDrone.Core/HealthCheck/Checks/DownloadClientRemovesCompletedDownloadsCheck.cs:line 42
+
+
+2025-12-05 23:54:30.3|Error|DownloadClientSortingCheck|Unknown error occurred in DownloadClientSortingCheck HealthCheck
+
+[v6.0.4.10291] System.Net.Http.HttpRequestException: Connection refused (gluetun:8080)
+ ---> System.Net.Sockets.SocketException (111): Connection refused
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.attemptConnection(AddressFamily addressFamily, SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 326
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.onConnect(SocketsHttpConnectionContext context, CancellationToken cancellationToken) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 312
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 115
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 157
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxyV2.IsApiSupported(QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxyV2.cs:line 35
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.FetchProxy(QBittorrentSettings settings) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 81
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.<>c__DisplayClass7_0.<GetProxyCache>b__0() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 76
+   at NzbDrone.Common.Cache.Cached`1.Get(String key, Func`1 function, Nullable`1 lifeTime) in ./NzbDrone.Common/Cache/Cached.cs:line 98
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxyCache(QBittorrentSettings settings, Boolean force) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 76
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrentProxySelector.GetProxy(QBittorrentSettings settings, Boolean force) in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrentProxySelector.cs:line 59
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.get_Proxy() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 49
+   at NzbDrone.Core.Download.Clients.QBittorrent.QBittorrent.GetStatus() in ./NzbDrone.Core/Download/Clients/QBittorrent/QBittorrent.cs:line 374
+   at NzbDrone.Core.HealthCheck.Checks.DownloadClientSortingCheck.Check() in ./NzbDrone.Core/HealthCheck/Checks/DownloadClientSortingCheck.cs:line 43
+
+
+2025-12-05 23:54:59.9|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-12-05 23:55:00.0|Info|DiskScanService|Scanning disk for Dune
+2025-12-05 23:55:00.2|Info|DiskScanService|Completed scanning disk for Dune
+2025-12-05 23:55:00.3|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-12-05 23:55:00.4|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-12-05 23:55:00.4|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-12-05 23:55:00.4|Info|RssSyncService|Starting RSS Sync
+2025-12-05 23:55:00.5|Info|ExistingExtraFileService|Found 0 possible extra files, imported 0 files.
+2025-12-05 23:55:00.9|Info|RefreshMovieService|Updating info for TRON: Ares
+2025-12-05 23:55:01.5|Info|DiskScanService|Scanning disk for TRON: Ares
+2025-12-05 23:55:01.5|Warn|RadarrErrorPipeline|Invalid request Validation failed: 
+ -- : Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.
+2025-12-05 23:55:01.6|Info|RecycleBinProvider|Recycle Bin has not been configured, cannot cleanup.
+2025-12-05 23:55:01.7|Info|HousekeepingService|Running housecleaning tasks
+2025-12-05 23:55:01.8|Info|DiskScanService|Completed scanning disk for TRON: Ares
+2025-12-05 23:55:02.7|Warn|Torznab|Indexer Torrent Downloads (Prowlarr) rss sync didn't cover the period between 12/5/2025 8:29:06 AM and 12/5/2025 11:55:01 PM UTC. Search may be required.
+2025-12-05 23:55:03.4|Info|ExistingMetadataImporter|Found 0 existing metadata files
+2025-12-05 23:55:03.5|Info|ExistingSubtitleImporter|Found 0 existing subtitle files
+2025-12-05 23:55:03.7|Warn|Torznab|Indexer Nyaa.si (Prowlarr) rss sync didn't cover the period between 12/5/2025 8:26:00 AM and 12/5/2025 4:30:00 PM UTC. Search may be required.
+2025-12-05 23:55:03.8|Info|DownloadDecisionMaker|Processing 239 releases
+2025-12-05 23:55:04.2|Info|Database|Vacuuming Log database
+2025-12-05 23:55:04.2|Info|Database|Log database compressed
+2025-12-05 23:55:04.4|Info|Database|Vacuuming Main database
+2025-12-05 23:55:04.6|Info|Database|Main database compressed
+2025-12-05 23:55:05.6|Info|ExistingOtherExtraImporter|Found 0 existing other extra files
+2025-12-05 23:55:05.6|Info|ExistingExtraFileService|Found 8 possible extra files, imported 0 files.
+2025-12-05 23:55:19.4|Info|RssSyncService|RSS Sync Completed. Reports found: 239, Reports grabbed: 0

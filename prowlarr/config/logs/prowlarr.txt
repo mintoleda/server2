@@ -3466,3 +3466,1050 @@
    at NzbDrone.Console.ConsoleApp.Main(String[] args) in ./NzbDrone.Console/ConsoleApp.cs:line 43
 
 
+2025-12-03 23:56:00.2|Info|Bootstrap|Starting Prowlarr - /app/bin/Prowlarr - Version 2.3.0.5236
+2025-12-03 23:56:00.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 23:56:00.4|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 23:56:00.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-03 23:56:01.0|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-03 23:56:01.1|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-03 23:56:01.1|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-03 23:56:01.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-03 23:56:01.2|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-03 23:56:01.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1028364s
+2025-12-03 23:56:01.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-03 23:56:01.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1301494s
+2025-12-03 23:56:01.4|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-03 23:56:01.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-03 23:56:01.4|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-03 23:56:01.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-03 23:56:01.5|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-03 23:56:01.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0498831s
+2025-12-03 23:56:01.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-03 23:56:01.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0637125s
+2025-12-03 23:56:01.9|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-12-03 23:56:02.1|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-12-03 23:56:02.3|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-12-03 23:56:10.9|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-12-03 23:56:11.0|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-12-03 23:56:11.0|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
+2025-12-03 23:56:32.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-03 23:56:32.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-03 23:56:32.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-03 23:56:33.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:56:33.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-03 23:56:33.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-03 23:56:33.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 00:12:33.8|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 00:12:33.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 00:12:33.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 00:12:33.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 00:29:38.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 00:29:38.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 00:29:38.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 00:29:39.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 00:29:39.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 00:29:39.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 00:29:39.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 00:45:09.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 00:45:09.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 00:45:09.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 00:45:09.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 00:59:56.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 00:59:56.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 00:59:56.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 01:00:57.8|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 01:00:57.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 01:00:57.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 01:00:57.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 01:16:26.4|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 01:16:26.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 01:16:26.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 01:16:26.4|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 01:30:12.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 01:30:12.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 01:30:12.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 01:31:44.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 01:31:44.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 01:31:44.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 01:31:44.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 01:47:06.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 01:47:06.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 01:47:06.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 01:47:06.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 02:00:23.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 02:00:23.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 02:00:23.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 02:02:24.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 02:02:24.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 02:02:24.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 02:02:24.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:02:46.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 04:02:47.1|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-04 04:02:47.1|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-04 04:02:47.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 04:02:47.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 04:02:47.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 04:02:48.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:02:48.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:02:48.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 04:02:48.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:02:48.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 04:02:51.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-04 04:02:51.0|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-04 04:02:51.0|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-04 04:18:18.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:18:18.8|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:18:18.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 04:18:18.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:33:17.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 04:33:17.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 04:33:17.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 04:33:49.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:33:49.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 04:33:49.0|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:33:49.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:49:10.0|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:49:10.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 04:49:10.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 04:49:10.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 05:03:32.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 05:03:33.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 05:03:33.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 05:04:34.4|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 05:04:34.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 05:04:34.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 05:04:34.4|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 05:20:04.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 05:20:04.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 05:20:04.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 05:20:04.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 05:33:52.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 05:33:52.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 05:33:52.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 05:35:53.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 05:35:53.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 05:35:53.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 05:35:53.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 16:41:17.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 16:41:18.2|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-04 16:41:18.2|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-04 16:41:19.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 16:41:19.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 16:41:19.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 16:41:19.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 16:41:19.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-04 16:41:19.9|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-04 16:41:19.9|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-04 16:41:20.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 16:41:20.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 16:41:20.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 16:41:20.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 16:41:21.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-04 16:41:21.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 100, Limit: 100, Categories: [2000, 2020]
+2025-12-04 16:41:22.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 16:41:26.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 16:57:53.2|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 16:57:53.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 16:57:53.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 16:57:53.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 16:57:55.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:11:52.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 17:11:52.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 17:11:52.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 17:11:54.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-04 17:13:48.1|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:13:48.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:13:48.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 17:13:48.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:13:50.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:32:13.1|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:32:13.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:32:13.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 17:32:13.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:32:15.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:42:11.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 17:42:11.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 17:42:11.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 17:42:13.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-04 17:48:13.3|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:48:13.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:48:13.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 17:48:13.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 17:48:15.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 18:53:09.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 18:53:09.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 18:53:09.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 18:53:10.9|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 18:53:11.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 18:53:11.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 18:53:11.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 18:53:31.3|Warn|Cardigann|Unable to connect to indexer [https://www.torrentdownloads.pro/today/?s_cat=4]. This is typically caused by DNS/SSL issues. Check DNS settings, ensure IPv6 is working or disabled, and consider using different DNS servers or a VPN. See: 'https://wiki.servarr.com/prowlarr/troubleshooting#dns-ssl-connection-issues'
+
+[v2.3.0.5236] System.Net.Http.HttpRequestException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+ ---> System.Net.Http.HttpIOException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Core.Indexers.IndexerHttpClient.ExecuteProxiedAsync(HttpRequest request, ProviderDefinition definition) in ./NzbDrone.Core/Indexers/IndexerHttpClient.cs:line 43
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<<FetchIndexerResponse>b__57_0>d.MoveNext() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 665
+--- End of stack trace from previous location ---
+   at Polly.ResiliencePipeline.<>c__9`2.<<ExecuteAsync>b__9_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 664
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+2025-12-04 18:53:31.3|Warn|Cardigann|Unable to connect to indexer [https://nyaa.si/?f=0&c=0_0&s=id&o=desc]. This is typically caused by DNS/SSL issues. Check DNS settings, ensure IPv6 is working or disabled, and consider using different DNS servers or a VPN. See: 'https://wiki.servarr.com/prowlarr/troubleshooting#dns-ssl-connection-issues'
+
+[v2.3.0.5236] System.Net.Http.HttpRequestException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+ ---> System.Net.Http.HttpIOException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Core.Indexers.IndexerHttpClient.ExecuteProxiedAsync(HttpRequest request, ProviderDefinition definition) in ./NzbDrone.Core/Indexers/IndexerHttpClient.cs:line 43
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<<FetchIndexerResponse>b__57_0>d.MoveNext() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 665
+--- End of stack trace from previous location ---
+   at Polly.ResiliencePipeline.<>c__9`2.<<ExecuteAsync>b__9_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 664
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+2025-12-04 18:53:31.3|Warn|Cardigann|Unable to connect to indexer [https://apibay.org/precompiled/data_top100_recent.json]. This is typically caused by DNS/SSL issues. Check DNS settings, ensure IPv6 is working or disabled, and consider using different DNS servers or a VPN. See: 'https://wiki.servarr.com/prowlarr/troubleshooting#dns-ssl-connection-issues'
+
+[v2.3.0.5236] System.Net.Http.HttpRequestException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+ ---> System.Net.Http.HttpIOException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Core.Indexers.IndexerHttpClient.ExecuteProxiedAsync(HttpRequest request, ProviderDefinition definition) in ./NzbDrone.Core/Indexers/IndexerHttpClient.cs:line 43
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<<FetchIndexerResponse>b__57_0>d.MoveNext() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 665
+--- End of stack trace from previous location ---
+   at Polly.ResiliencePipeline.<>c__9`2.<<ExecuteAsync>b__9_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 664
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+2025-12-04 18:53:31.3|Warn|Cardigann|Unable to connect to indexer [https://www.torrentdownloads.pro/today/?s_cat=8&s_cat=1]. This is typically caused by DNS/SSL issues. Check DNS settings, ensure IPv6 is working or disabled, and consider using different DNS servers or a VPN. See: 'https://wiki.servarr.com/prowlarr/troubleshooting#dns-ssl-connection-issues'
+
+[v2.3.0.5236] System.Net.Http.HttpRequestException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+ ---> System.Net.Http.HttpIOException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Core.Indexers.IndexerHttpClient.ExecuteProxiedAsync(HttpRequest request, ProviderDefinition definition) in ./NzbDrone.Core/Indexers/IndexerHttpClient.cs:line 43
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<<FetchIndexerResponse>b__57_0>d.MoveNext() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 665
+--- End of stack trace from previous location ---
+   at Polly.ResiliencePipeline.<>c__9`2.<<ExecuteAsync>b__9_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 664
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+2025-12-04 18:53:31.3|Warn|Cardigann|Unable to connect to indexer [https://apibay.org/precompiled/data_top100_recent.json]. This is typically caused by DNS/SSL issues. Check DNS settings, ensure IPv6 is working or disabled, and consider using different DNS servers or a VPN. See: 'https://wiki.servarr.com/prowlarr/troubleshooting#dns-ssl-connection-issues'
+
+[v2.3.0.5236] System.Net.Http.HttpRequestException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+ ---> System.Net.Http.HttpIOException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Core.Indexers.IndexerHttpClient.ExecuteProxiedAsync(HttpRequest request, ProviderDefinition definition) in ./NzbDrone.Core/Indexers/IndexerHttpClient.cs:line 43
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<<FetchIndexerResponse>b__57_0>d.MoveNext() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 665
+--- End of stack trace from previous location ---
+   at Polly.ResiliencePipeline.<>c__9`2.<<ExecuteAsync>b__9_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 664
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+2025-12-04 18:53:31.3|Warn|Cardigann|Unable to connect to indexer [https://nyaa.si/?f=0&c=0_0&s=id&o=desc]. This is typically caused by DNS/SSL issues. Check DNS settings, ensure IPv6 is working or disabled, and consider using different DNS servers or a VPN. See: 'https://wiki.servarr.com/prowlarr/troubleshooting#dns-ssl-connection-issues'
+
+[v2.3.0.5236] System.Net.Http.HttpRequestException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+ ---> System.Net.Http.HttpIOException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Core.Indexers.IndexerHttpClient.ExecuteProxiedAsync(HttpRequest request, ProviderDefinition definition) in ./NzbDrone.Core/Indexers/IndexerHttpClient.cs:line 43
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<<FetchIndexerResponse>b__57_0>d.MoveNext() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 665
+--- End of stack trace from previous location ---
+   at Polly.ResiliencePipeline.<>c__9`2.<<ExecuteAsync>b__9_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 664
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+2025-12-04 18:53:32.7|Warn|Cardigann|Unable to connect to indexer [https://www.limetorrents.fun/latest100]. This is typically caused by DNS/SSL issues. Check DNS settings, ensure IPv6 is working or disabled, and consider using different DNS servers or a VPN. See: 'https://wiki.servarr.com/prowlarr/troubleshooting#dns-ssl-connection-issues'
+
+[v2.3.0.5236] System.Net.Http.HttpRequestException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+ ---> System.Net.Http.HttpIOException: The response ended prematurely while waiting for the next frame from the server. (ResponseEnded)
+   at System.Net.Http.Http2Connection.ThrowRequestAborted(Exception innerException)
+   at System.Net.Http.Http2Connection.Http2Stream.TryEnsureHeaders()
+   at System.Net.Http.Http2Connection.Http2Stream.ReadResponseHeadersAsync(CancellationToken cancellationToken)
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.Http2Connection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at NzbDrone.Common.Http.Dispatchers.ManagedHttpDispatcher.GetResponseAsync(HttpRequest request, CookieContainer cookies) in ./NzbDrone.Common/Http/Dispatchers/ManagedHttpDispatcher.cs:line 120
+   at NzbDrone.Common.Http.HttpClient.ExecuteRequestAsync(HttpRequest request, CookieContainer cookieContainer) in ./NzbDrone.Common/Http/HttpClient.cs:line 171
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 70
+   at NzbDrone.Core.Indexers.IndexerHttpClient.ExecuteProxiedAsync(HttpRequest request, ProviderDefinition definition) in ./NzbDrone.Core/Indexers/IndexerHttpClient.cs:line 43
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.<>c.<<FetchIndexerResponse>b__57_0>d.MoveNext() in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 665
+--- End of stack trace from previous location ---
+   at Polly.ResiliencePipeline.<>c__9`2.<<ExecuteAsync>b__9_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Polly.Outcome`1.GetResultOrRethrow()
+   at Polly.ResiliencePipeline.ExecuteAsync[TResult,TState](Func`3 callback, TState state, CancellationToken cancellationToken)
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 664
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 587
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./NzbDrone.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+2025-12-04 19:08:41.1|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:08:41.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 19:08:41.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:08:41.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:08:43.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:23:39.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 19:23:39.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 19:23:39.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 19:23:41.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-04 19:24:11.3|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:24:11.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 19:24:11.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:24:11.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:24:13.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:39:41.4|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:39:41.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:39:41.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 19:39:41.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:39:43.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:53:59.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 19:53:59.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 19:53:59.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 19:54:01.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-04 19:55:30.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:55:30.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:55:30.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 19:55:30.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 19:55:32.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:11:24.2|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:11:24.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:11:24.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 20:11:24.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:11:26.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:24:41.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 20:24:41.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 20:24:41.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 20:24:43.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-04 20:27:12.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:27:12.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:27:12.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 20:27:12.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:27:14.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:43:01.3|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:43:01.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:43:01.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 20:43:01.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:43:03.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:55:24.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 20:55:24.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 20:55:24.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 20:55:26.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-04 20:58:56.1|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:58:56.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:58:56.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 20:58:56.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 20:58:58.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:14:45.7|Info|HistoryService|Removing items older than 30 days from history
+2025-12-04 21:14:45.8|Info|HousekeepingService|Running housecleaning tasks
+2025-12-04 21:14:46.1|Info|Database|Vacuuming Log database
+2025-12-04 21:14:46.2|Info|Database|Log database compressed
+2025-12-04 21:14:46.2|Info|Database|Vacuuming Main database
+2025-12-04 21:14:46.2|Info|Database|Main database compressed
+2025-12-04 21:14:50.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:14:50.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:14:50.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 21:14:50.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:14:52.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:25:49.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 21:25:49.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 21:25:49.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 21:25:51.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-04 21:30:20.8|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:30:20.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:30:20.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 21:30:20.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:30:22.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 21:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:46:23.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 21:56:08.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 21:56:08.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 21:56:08.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 21:56:10.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-04 22:04:42.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:04:42.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:04:42.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 22:04:42.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:04:44.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:21:00.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:21:00.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:21:00.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 22:21:00.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:21:02.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:26:30.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 22:26:30.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 22:26:30.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 22:26:32.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-04 22:37:19.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:37:19.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:37:19.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 22:37:19.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:37:21.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:41:44.2|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 22:41:44.5|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-04 22:41:44.5|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-04 22:41:46.2|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 22:41:46.5|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-04 22:41:46.5|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-04 22:41:46.5|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-04 22:53:37.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:53:37.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:53:37.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 22:53:37.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:53:39.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-04 22:57:06.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-04 22:57:06.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-04 22:57:06.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-04 22:57:08.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-04 23:09:56.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 23:09:56.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-04 23:09:56.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-04 23:09:56.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 03:54:26.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-05 03:54:26.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 03:54:26.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-05 03:54:26.9|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 03:54:26.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 03:54:26.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 03:54:26.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:09:57.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:09:57.1|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:09:57.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 04:09:57.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:24:56.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-05 04:24:56.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 04:24:56.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-05 04:25:27.3|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:25:27.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:25:27.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 04:25:27.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:40:57.4|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:40:57.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:40:57.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 04:40:57.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:41:51.2|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 04:41:51.5|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-05 04:41:51.6|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-05 04:41:53.2|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 04:41:53.5|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-05 04:41:53.6|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-05 04:41:53.6|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-05 04:55:27.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-05 04:55:27.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 04:55:27.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-05 04:56:27.8|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:56:27.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 04:56:27.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 04:56:27.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:11:58.0|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:11:58.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:11:58.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 05:11:58.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:26:45.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-05 05:26:45.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 05:26:45.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-05 05:27:46.2|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:27:46.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:27:46.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 05:27:46.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:43:16.3|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:43:16.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:43:16.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 05:43:16.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:57:15.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-05 05:57:15.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 05:57:15.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-05 05:58:46.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:58:46.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 05:58:46.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 05:58:46.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 06:14:16.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 06:14:16.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 06:14:16.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 06:14:16.7|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 06:27:46.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-05 06:27:46.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 06:27:46.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-05 06:29:46.9|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 06:29:46.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 06:29:46.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 06:29:46.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 06:45:28.6|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 06:45:28.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 06:45:28.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 06:45:28.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 06:57:58.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-05 06:57:58.1|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 06:57:58.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-05 07:00:58.7|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:00:58.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 07:00:58.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:00:58.8|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:16:28.9|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:16:28.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:16:28.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 07:16:29.0|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:28:28.4|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 07:28:28.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-05 07:28:28.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-05 07:31:59.1|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:31:59.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:31:59.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 07:31:59.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:47:29.3|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:47:29.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:47:29.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 07:47:29.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 07:58:47.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-05 07:58:47.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 07:58:47.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-05 08:02:47.9|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 08:02:47.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 08:02:47.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 08:02:47.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 08:18:06.4|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 08:18:06.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 08:18:06.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 08:18:06.4|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 08:29:05.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-05 08:29:05.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 08:29:05.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-05 08:33:54.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 08:33:54.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 08:33:54.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 08:33:54.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 23:54:25.8|Info|Bootstrap|Starting Prowlarr - /app/bin/Prowlarr - Version 2.3.0.5236
+2025-12-05 23:54:25.9|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-05 23:54:26.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-05 23:54:26.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-12-05 23:54:26.9|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-05 23:54:27.0|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-05 23:54:27.1|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-05 23:54:27.1|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-05 23:54:27.2|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-05 23:54:27.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1482843s
+2025-12-05 23:54:27.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-05 23:54:27.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.1655781s
+2025-12-05 23:54:27.4|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-12-05 23:54:27.4|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-12-05 23:54:27.4|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-12-05 23:54:27.4|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-12-05 23:54:27.5|Info|DatabaseEngineVersionCheck|SQLite 3.50.4
+2025-12-05 23:54:27.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0521689s
+2025-12-05 23:54:27.5|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-12-05 23:54:27.5|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0706918s
+2025-12-05 23:54:28.0|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-12-05 23:54:28.2|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-12-05 23:54:28.5|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-12-05 23:54:37.6|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-12-05 23:54:37.6|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-12-05 23:54:37.6|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
+2025-12-05 23:54:58.4|Info|HistoryService|Removing items older than 30 days from history
+2025-12-05 23:54:58.4|Info|HousekeepingService|Running housecleaning tasks
+2025-12-05 23:54:58.9|Info|Database|Vacuuming Log database
+2025-12-05 23:54:58.9|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 23:54:59.0|Info|Database|Log database compressed
+2025-12-05 23:54:59.1|Info|Database|Vacuuming Main database
+2025-12-05 23:54:59.2|Info|Database|Main database compressed
+2025-12-05 23:54:59.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-05 23:55:00.0|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-05 23:55:00.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-12-05 23:55:00.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 23:55:00.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-12-05 23:55:00.9|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-12-05 23:55:01.6|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-12-05 23:55:01.6|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-05 23:55:01.7|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v2.3.0.5236] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./NzbDrone.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./NzbDrone.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./NzbDrone.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./NzbDrone.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-12-05 23:55:02.6|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-12-05 23:55:02.8|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 23:55:02.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 23:55:02.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 23:55:02.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-05 23:55:03.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 100, Limit: 100, Categories: [2000, 2020]
+2025-12-05 23:55:04.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-05 23:55:07.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
+2025-12-05 23:56:06.4|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [Snowfall] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:06.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Snowfall] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:06.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Snowfall] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 23:56:06.4|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [Snowfall] for Season / Episode:[S01], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:13.9|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [Snowfall] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:13.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Snowfall] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:13.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Snowfall] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 23:56:13.9|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [Snowfall] for Season / Episode:[S02], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:20.4|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [Snowfall] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:20.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Snowfall] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:20.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Snowfall] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 23:56:20.4|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [Snowfall] for Season / Episode:[S03], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:26.5|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [Snowfall] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:26.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Snowfall] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:26.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Snowfall] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 23:56:26.5|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [Snowfall] for Season / Episode:[S04], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:32.2|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [Snowfall] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:32.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Snowfall] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:32.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Snowfall] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 23:56:32.2|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [Snowfall] for Season / Episode:[S05], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:44.3|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [Snowfall] for Season / Episode:[S06], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:44.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [Snowfall] for Season / Episode:[S06], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-05 23:56:44.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [Snowfall] for Season / Episode:[S06], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-05 23:56:44.3|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [Snowfall] for Season / Episode:[S06], Offset: 0, Limit: 100, Categories: [5000]
+2025-12-06 00:11:00.3|Info|ReleaseSearchService|Searching indexer(s): [LimeTorrents] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-06 00:11:00.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-06 00:11:00.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-12-06 00:11:00.4|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-12-06 00:11:02.4|Info|ReleaseSearchService|Searching indexer(s): [Torrent Downloads] for Term: [] for Season / Episode:[], Offset: 100, Limit: 100, Categories: [5000, 5070]
